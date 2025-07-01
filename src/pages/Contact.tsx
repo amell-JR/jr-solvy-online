@@ -7,7 +7,8 @@ const Contact = () => {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    country: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -32,28 +33,28 @@ const Contact = () => {
       title: 'Email',
       value: 'info@jrsolvy.com',
       description: 'Send us an email anytime',
-      color: 'from-indigo-600 to-purple-600'
+      color: 'bg-indigo-600'
     },
     {
       icon: Phone,
       title: 'Phone',
       value: '+234 XXX XXX XXXX',
       description: 'Call us during business hours',
-      color: 'from-sky-500 to-cyan-500'
+      color: 'bg-sky-500'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Nigeria',
-      description: 'We serve clients globally',
-      color: 'from-green-500 to-emerald-500'
+      value: 'Global Services',
+      description: 'We serve clients worldwide',
+      color: 'bg-green-500'
     },
     {
       icon: Clock,
       title: 'Business Hours',
       value: 'Mon - Fri: 9AM - 6PM',
       description: 'West Africa Time (WAT)',
-      color: 'from-orange-500 to-red-500'
+      color: 'bg-orange-500'
     }
   ];
 
@@ -69,7 +70,7 @@ const Contact = () => {
 
   if (isSubmitted) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-sky-50">
+      <div className="pt-20 min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center max-w-md mx-auto p-8">
           <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="text-white" size={40} />
@@ -80,7 +81,7 @@ const Contact = () => {
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
-            className="bg-gradient-to-r from-indigo-600 to-sky-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200"
+            className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
           >
             Send Another Message
           </button>
@@ -92,11 +93,11 @@ const Contact = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-50 via-white to-sky-50 py-20">
+      <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Get in <span className="bg-gradient-to-r from-indigo-600 to-sky-500 bg-clip-text text-transparent">Touch</span>
+              Get in <span className="text-indigo-600">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Ready to transform your business? Let's discuss your project and explore how 
@@ -115,7 +116,7 @@ const Contact = () => {
                 key={index}
                 className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               >
-                <div className={`w-16 h-16 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center mx-auto mb-4`}>
+                <div className={`w-16 h-16 ${info.color} rounded-xl flex items-center justify-center mx-auto mb-4`}>
                   <info.icon className="text-white" size={28} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -181,24 +182,40 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                      Service Interested In
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
-                    >
-                      <option value="">Select a service</option>
-                      {services.map((service, index) => (
-                        <option key={index} value={service}>
-                          {service}
-                        </option>
-                      ))}
-                    </select>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                        Service Interested In
+                      </label>
+                      <select
+                        id="subject"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
+                      >
+                        <option value="">Select a service</option>
+                        {services.map((service, index) => (
+                          <option key={index} value={service}>
+                            {service}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-2">
+                        Country/Location <span className="text-gray-400">(Optional)</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="country"
+                        name="country"
+                        value={formData.country}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
+                        placeholder="e.g., Nigeria, UK, USA..."
+                      />
+                    </div>
                   </div>
 
                   <div>
@@ -219,7 +236,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-indigo-600 to-sky-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center space-x-2"
+                    className="w-full bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center space-x-2"
                   >
                     <Send size={20} />
                     <span>Send Message</span>
@@ -230,7 +247,7 @@ const Contact = () => {
 
             {/* Additional Info */}
             <div className="space-y-8">
-              <div className="bg-gradient-to-br from-indigo-600 to-sky-500 rounded-2xl p-8 text-white">
+              <div className="bg-indigo-600 rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Why Work With Us?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
