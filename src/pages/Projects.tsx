@@ -11,7 +11,7 @@ const Projects = () => {
       tech: ['React Native', 'AI/ML', 'Voice Recognition', 'Natural Language Processing'],
       image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500',
       icon: Brain,
-      color: 'from-purple-600 to-indigo-600'
+      color: 'bg-purple-600'
     },
     {
       title: 'Vibe Coding',
@@ -20,7 +20,7 @@ const Projects = () => {
       tech: ['React', 'Node.js', 'MongoDB', 'Code Editor Integration'],
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500',
       icon: Globe,
-      color: 'from-sky-500 to-cyan-500'
+      color: 'bg-sky-500'
     },
     {
       title: 'Uyo SafeAlert',
@@ -29,7 +29,7 @@ const Projects = () => {
       tech: ['React Native', 'Firebase', 'Real-time Notifications', 'Geolocation'],
       image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500',
       icon: Shield,
-      color: 'from-red-500 to-pink-500'
+      color: 'bg-red-500'
     },
     {
       title: 'E-Commerce Dashboard',
@@ -38,7 +38,7 @@ const Projects = () => {
       tech: ['React', 'TypeScript', 'Charts.js', 'REST API'],
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500',
       icon: Globe,
-      color: 'from-green-500 to-emerald-500'
+      color: 'bg-emerald-500'
     },
     {
       title: 'AI Content Generator',
@@ -47,7 +47,7 @@ const Projects = () => {
       tech: ['Python', 'OpenAI API', 'React', 'Natural Language Processing'],
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500',
       icon: Brain,
-      color: 'from-indigo-600 to-purple-600'
+      color: 'bg-indigo-600'
     },
     {
       title: 'Task Management App',
@@ -56,7 +56,7 @@ const Projects = () => {
       tech: ['Flutter', 'Firebase', 'Push Notifications', 'Cloud Sync'],
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500',
       icon: Smartphone,
-      color: 'from-orange-500 to-red-500'
+      color: 'bg-orange-500'
     }
   ];
 
@@ -68,11 +68,11 @@ const Projects = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-50 via-white to-sky-50 py-20">
+      <section className="bg-indigo-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="bg-gradient-to-r from-indigo-600 to-sky-500 bg-clip-text text-transparent">Projects</span>
+              Our <span className="text-indigo-600">Projects</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Explore our portfolio of innovative solutions, from AI-powered applications to 
@@ -89,7 +89,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-indigo-200 group"
               >
                 {/* Project Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -98,7 +98,7 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className={`absolute top-4 left-4 w-10 h-10 bg-gradient-to-r ${project.color} rounded-lg flex items-center justify-center`}>
+                  <div className={`absolute top-4 left-4 w-10 h-10 ${project.color} rounded-lg flex items-center justify-center`}>
                     <project.icon className="text-white" size={20} />
                   </div>
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-700">
@@ -137,11 +137,11 @@ const Projects = () => {
                   
                   {/* Action Buttons */}
                   <div className="flex space-x-3">
-                    <button className="flex-1 bg-gradient-to-r from-indigo-600 to-sky-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-md transition-all duration-200 flex items-center justify-center space-x-1">
+                    <button className="flex-1 bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-1">
                       <ExternalLink size={14} />
                       <span>View Details</span>
                     </button>
-                    <button className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button className="p-2 border-2 border-gray-300 rounded-lg hover:bg-gray-50 hover:border-indigo-300 transition-colors duration-200">
                       <Github size={16} className="text-gray-600" />
                     </button>
                   </div>
@@ -168,7 +168,7 @@ const Projects = () => {
             {technologies.map((tech, index) => (
               <div
                 key={index}
-                className="bg-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+                className="bg-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 border-2 border-gray-100 hover:border-indigo-200"
               >
                 <span className="text-gray-700 font-medium">{tech}</span>
               </div>
@@ -178,7 +178,7 @@ const Projects = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-sky-500">
+      <section className="py-20 bg-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -223,7 +223,7 @@ const Projects = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
-                className="bg-gradient-to-r from-indigo-600 to-sky-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
+                className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 Start Your Project
               </a>

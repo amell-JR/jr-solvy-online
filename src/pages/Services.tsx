@@ -9,42 +9,42 @@ const Services = () => {
       title: 'AI Solutions & Automation',
       description: 'Custom AI tools, chatbots, and automation systems to streamline your business processes.',
       features: ['Custom AI Development', 'Process Automation', 'Machine Learning Models', 'AI Integration'],
-      color: 'from-purple-600 to-indigo-600'
+      color: 'bg-purple-600'
     },
     {
       icon: Code,
       title: 'Web Development',
       description: 'Modern, responsive websites and web applications built with cutting-edge technologies.',
       features: ['Responsive Design', 'E-commerce Solutions', 'Web Applications', 'CMS Development'],
-      color: 'from-indigo-600 to-sky-500'
+      color: 'bg-indigo-600'
     },
     {
       icon: Smartphone,
       title: 'Mobile App Development',
       description: 'Native and cross-platform mobile applications for iOS and Android platforms.',
       features: ['iOS Development', 'Android Development', 'Cross-platform Apps', 'App Store Optimization'],
-      color: 'from-sky-500 to-cyan-500'
+      color: 'bg-sky-500'
     },
     {
       icon: Palette,
       title: 'Graphics & UI/UX Design',
       description: 'Creative design services including branding, UI/UX design, and visual identity.',
       features: ['Brand Identity', 'UI/UX Design', 'Logo Design', 'Marketing Materials'],
-      color: 'from-pink-500 to-rose-500'
+      color: 'bg-pink-500'
     },
     {
       icon: TrendingUp,
       title: 'Digital Marketing',
       description: 'Comprehensive digital marketing strategies to grow your online presence.',
       features: ['SEO Optimization', 'Social Media Marketing', 'Content Strategy', 'Analytics & Reporting'],
-      color: 'from-green-500 to-emerald-500'
+      color: 'bg-emerald-500'
     },
     {
       icon: Settings,
       title: 'IT Consulting',
       description: 'Strategic technology consulting to help you make informed digital decisions.',
       features: ['Technology Strategy', 'System Integration', 'Digital Transformation', 'Technical Audits'],
-      color: 'from-gray-600 to-gray-800'
+      color: 'bg-gray-700'
     }
   ];
 
@@ -74,11 +74,11 @@ const Services = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-50 via-white to-sky-50 py-20">
+      <section className="bg-indigo-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="bg-gradient-to-r from-indigo-600 to-sky-500 bg-clip-text text-transparent">Services</span>
+              Our <span className="text-indigo-600">Services</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Comprehensive digital solutions designed to transform your business and drive growth 
@@ -95,11 +95,11 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border-2 border-gray-100 hover:border-indigo-200 group"
               >
-                <div className={`h-2 bg-gradient-to-r ${service.color}`}></div>
+                <div className={`h-2 ${service.color}`}></div>
                 <div className="p-8">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-16 h-16 ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <service.icon className="text-white" size={28} />
                   </div>
                   
@@ -141,7 +141,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-white font-bold text-xl">{step.step}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -196,7 +196,7 @@ const Services = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                     <Settings className="text-white" size={16} />
                   </div>
                   <div>
@@ -208,9 +208,9 @@ const Services = () => {
             </div>
             
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-indigo-100 to-sky-100 rounded-2xl flex items-center justify-center">
+              <div className="w-full h-96 bg-sky-50 border-2 border-sky-200 rounded-2xl flex items-center justify-center">
                 <div className="text-center space-y-4">
-                  <div className="w-32 h-32 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-full mx-auto flex items-center justify-center">
+                  <div className="w-32 h-32 bg-indigo-600 rounded-full mx-auto flex items-center justify-center">
                     <Settings className="text-white" size={48} />
                   </div>
                   <div className="space-y-2">
@@ -225,7 +225,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-sky-500">
+      <section className="py-20 bg-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">

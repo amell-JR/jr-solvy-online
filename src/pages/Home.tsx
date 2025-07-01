@@ -55,9 +55,9 @@ const Home = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-gray-100 hover:border-indigo-200"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
                   <service.icon className="text-white" size={24} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -73,7 +73,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/services"
-              className="bg-gradient-to-r from-indigo-600 to-sky-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 inline-block"
+              className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 inline-block"
             >
               View All Services
             </Link>
@@ -82,7 +82,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-sky-500">
+      <section className="py-20 bg-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -121,7 +121,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-indigo-600 to-sky-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
+                className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 Get Started Today
               </Link>

@@ -29,11 +29,11 @@ const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-50 via-white to-sky-50 py-20">
+      <section className="bg-indigo-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="bg-gradient-to-r from-indigo-600 to-sky-500 bg-clip-text text-transparent">JR Solvy</span>
+              About <span className="text-indigo-600">JR Solvy</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               JR Digital Insights is where innovation meets expertise. We're passionate about transforming 
@@ -70,9 +70,9 @@ const About = () => {
             </div>
             
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-indigo-100 to-sky-100 rounded-2xl flex items-center justify-center">
+              <div className="w-full h-96 bg-sky-50 border-2 border-sky-200 rounded-2xl flex items-center justify-center">
                 <div className="text-center space-y-4">
-                  <div className="w-32 h-32 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-full mx-auto flex items-center justify-center">
+                  <div className="w-32 h-32 bg-indigo-600 rounded-full mx-auto flex items-center justify-center">
                     <Code className="text-white" size={48} />
                   </div>
                   <div className="space-y-2">
@@ -90,7 +90,7 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-indigo-600">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
                   <Target className="text-white" size={24} />
@@ -103,7 +103,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-sky-500">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-12 h-12 bg-sky-500 rounded-lg flex items-center justify-center">
                   <Eye className="text-white" size={24} />
@@ -135,9 +135,9 @@ const About = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="text-center space-y-4 p-6 rounded-xl hover:bg-gray-50 transition-colors duration-300"
+                className="text-center space-y-4 p-6 rounded-xl hover:bg-gray-50 transition-colors duration-300 border-2 border-transparent hover:border-indigo-200"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-full flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto">
                   <value.icon className="text-white" size={28} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -153,7 +153,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-sky-500">
+      <section className="py-20 bg-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
             Meet Our Founder
@@ -163,7 +163,7 @@ const About = () => {
           </p>
           
           <div className="max-w-md mx-auto bg-white rounded-2xl p-8 shadow-xl">
-            <div className="w-24 h-24 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <div className="w-24 h-24 bg-indigo-600 rounded-full mx-auto mb-4 flex items-center justify-center">
               <span className="text-white font-bold text-2xl">SR</span>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Sunday Robert</h3>
