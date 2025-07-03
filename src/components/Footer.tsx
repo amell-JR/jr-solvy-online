@@ -5,85 +5,100 @@ import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container-responsive section-padding-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-indigo-600 to-sky-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">JR</span>
+          <div className="space-y-3 sm:space-y-4 text-center sm:text-left lg:col-span-1">
+            <div className="flex items-center justify-center sm:justify-start space-x-2 sm:space-x-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary-foreground/20 rounded-lg flex items-center justify-center interactive-scale">
+                <span className="text-primary-foreground font-bold text-sm sm:text-base">JR</span>
               </div>
-              <span className="text-xl font-bold">JR Solvy</span>
+              <span className="text-lg sm:text-xl font-bold">JR Solvy</span>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-primary-foreground/80 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
               JR Digital Insights - Empowering businesses with AI-powered tech solutions and digital transformation.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link>
-              </li>
-              <li>
-                <Link to="/projects" className="text-gray-400 hover:text-white transition-colors">Projects</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link>
-              </li>
+          <div className="text-center sm:text-left">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              {[
+                { name: "About Us", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Projects", path: "/projects" },
+                { name: "Contact", path: "/contact" }
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link 
+                    to={link.path} 
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm focus-ring rounded touch-target inline-block"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>AI Tools Development</li>
-              <li>Web Development</li>
-              <li>Mobile Apps</li>
-              <li>Digital Marketing</li>
-              <li>Graphics Design</li>
+          <div className="text-center sm:text-left">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Services</h3>
+            <ul className="space-y-2 sm:space-y-3 text-primary-foreground/80">
+              {[
+                "AI Tools Development",
+                "Web Development", 
+                "Mobile Apps",
+                "Digital Marketing",
+                "Graphics Design"
+              ].map((service) => (
+                <li key={service} className="text-sm">{service}</li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-2 text-gray-400">
-                <Mail size={16} />
-                <span className="text-sm">info@jrsolvy.com</span>
+          <div className="text-center sm:text-left">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Get in Touch</h3>
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
+                <Mail size={14} className="flex-shrink-0" />
+                <span className="text-xs sm:text-sm">info@jrsolvy.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-gray-400">
-                <Phone size={16} />
-                <span className="text-sm">+234 XXX XXX XXXX</span>
+              <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
+                <Phone size={14} className="flex-shrink-0" />
+                <span className="text-xs sm:text-sm">+234 XXX XXX XXXX</span>
               </div>
-              <div className="flex items-center space-x-2 text-gray-400">
-                <MapPin size={16} />
-                <span className="text-sm">Nigeria</span>
+              <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
+                <MapPin size={14} className="flex-shrink-0" />
+                <span className="text-xs sm:text-sm">Global Services</span>
               </div>
             </div>
             
             {/* Social Links */}
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
+            <div className="flex justify-center sm:justify-start space-x-3 sm:space-x-4 mt-3 sm:mt-4">
+              <a 
+                href="#" 
+                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors focus-ring rounded p-1 touch-target"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={18} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
+              <a 
+                href="#" 
+                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors focus-ring rounded p-1 touch-target"
+                aria-label="Twitter"
+              >
+                <Twitter size={18} />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-primary-foreground/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
+          <p className="text-primary-foreground/80 text-xs sm:text-sm">
             © 2025 JR Solvy - JR Digital Insights. All rights reserved.
           </p>
         </div>

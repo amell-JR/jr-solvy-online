@@ -101,5 +101,147 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Enhanced scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  /* Focus styles for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  /* Touch-friendly button sizing */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@layer components {
+  /* Responsive container utilities */
+  .container-responsive {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @screen sm {
+    .container-responsive {
+      max-width: 640px;
+    }
+  }
+
+  @screen md {
+    .container-responsive {
+      max-width: 768px;
+    }
+  }
+
+  @screen lg {
+    .container-responsive {
+      max-width: 1024px;
+    }
+  }
+
+  @screen xl {
+    .container-responsive {
+      max-width: 1280px;
+    }
+  }
+
+  @screen 2xl {
+    .container-responsive {
+      max-width: 1536px;
+    }
+  }
+
+  /* Mobile-first typography scale */
+  .text-responsive-sm {
+    @apply text-sm sm:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-base sm:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl lg:text-2xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl lg:text-4xl;
+  }
+
+  .text-responsive-3xl {
+    @apply text-3xl sm:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  /* Spacing utilities for responsive design */
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .section-padding-sm {
+    @apply py-8 sm:py-12 lg:py-16;
+  }
+
+  /* Interactive elements */
+  .interactive-scale {
+    @apply transition-transform duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .interactive-glow {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20;
+  }
+
+  /* Card components responsive design */
+  .card-responsive {
+    @apply bg-card text-card-foreground rounded-lg border shadow-sm transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:shadow-md hover:-translate-y-1;
+  }
+
+  /* Button responsive variants */
+  .btn-responsive {
+    @apply px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 text-sm sm:text-base lg:text-lg;
+  }
+
+  /* Grid responsive utilities */
+  .grid-responsive-auto {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12;
+  }
+
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8;
   }
 }
