@@ -1,14 +1,13 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Clock, Send, CheckCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
-    message: '',
-    country: ''
+    message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -38,22 +37,15 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+234 XXX XXX XXXX',
+      value: 'Available on Request',
       description: 'Call us during business hours',
       color: 'bg-sky-500'
-    },
-    {
-      icon: MapPin,
-      title: 'Location',
-      value: 'Global Services',
-      description: 'We serve clients worldwide',
-      color: 'bg-green-500'
     },
     {
       icon: Clock,
       title: 'Business Hours',
       value: 'Mon - Fri: 9AM - 6PM',
-      description: 'West Africa Time (WAT)',
+      description: 'Available for global clients',
       color: 'bg-orange-500'
     }
   ];
@@ -110,7 +102,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
@@ -182,40 +174,24 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                        Service Interested In
-                      </label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
-                      >
-                        <option value="">Select a service</option>
-                        {services.map((service, index) => (
-                          <option key={index} value={service}>
-                            {service}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                    <div>
-                      <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-2">
-                        Country/Location <span className="text-gray-400">(Optional)</span>
-                      </label>
-                      <input
-                        type="text"
-                        id="country"
-                        name="country"
-                        value={formData.country}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
-                        placeholder="e.g., Nigeria, UK, USA..."
-                      />
-                    </div>
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                      Service Interested In
+                    </label>
+                    <select
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
+                    >
+                      <option value="">Select a service</option>
+                      {services.map((service, index) => (
+                        <option key={index} value={service}>
+                          {service}
+                        </option>
+                      ))}
+                    </select>
                   </div>
 
                   <div>

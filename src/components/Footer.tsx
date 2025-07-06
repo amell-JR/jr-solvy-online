@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
               <span className="text-lg sm:text-xl font-bold">JR Solvy</span>
             </div>
             <p className="text-primary-foreground/80 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
-              JR Digital Insights - Empowering businesses with AI-powered tech solutions and digital transformation.
+              JR Digital Insights - Empowering businesses worldwide with AI-powered tech solutions and digital transformation.
             </p>
           </div>
 
@@ -66,14 +66,6 @@ const Footer = () => {
               <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
                 <Mail size={14} className="flex-shrink-0" />
                 <span className="text-xs sm:text-sm">info@jrsolvy.com</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
-                <Phone size={14} className="flex-shrink-0" />
-                <span className="text-xs sm:text-sm">+234 XXX XXX XXXX</span>
-              </div>
-              <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
-                <MapPin size={14} className="flex-shrink-0" />
-                <span className="text-xs sm:text-sm">Global Services</span>
               </div>
             </div>
             

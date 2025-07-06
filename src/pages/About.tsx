@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { Users, Target, Eye, Award, Code, Brain, MapPin, Calendar, Trophy, Rocket } from 'lucide-react';
+import { Users, Target, Eye, Award, Code, Brain, Calendar, Trophy, Rocket } from 'lucide-react';
 
 const About = () => {
   const values = [
     {
       icon: Brain,
       title: 'Innovation First',
-      description: 'We pioneer cutting-edge AI and digital solutions that give our clients a competitive edge in their markets.'
+      description: 'We pioneer cutting-edge AI and digital solutions that give our clients a competitive edge in their markets worldwide.'
     },
     {
       icon: Users,
@@ -30,7 +30,7 @@ const About = () => {
     {
       year: "2021",
       title: "The Beginning",
-      description: "Started with a vision to make AI accessible to businesses across Nigeria"
+      description: "Started with a vision to make AI accessible to businesses worldwide"
     },
     {
       year: "2022",
@@ -40,12 +40,12 @@ const About = () => {
     {
       year: "2023",
       title: "Rapid Growth",
-      description: "Expanded to serve 25+ clients with proven digital transformation results"
+      description: "Expanded to serve 25+ clients globally with proven digital transformation results"
     },
     {
       year: "2024",
       title: "Innovation Hub",
-      description: "Established as Nigeria's leading digital innovation partner with 50+ successful projects"
+      description: "Established as a leading global digital innovation partner with 50+ successful projects"
     }
   ];
 
@@ -72,7 +72,7 @@ const About = () => {
               The Story Behind <span className="text-indigo-600">JR Solvy</span>
             </h1>
             <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              From a passionate developer to Nigeria's leading digital transformation expert, 
+              From a passionate developer to a leading global digital transformation expert, 
               discover the journey that built JR Solvy into the innovation powerhouse it is today.
             </p>
           </div>
@@ -95,17 +95,17 @@ const About = () => {
                 <p>
                   <strong className="text-gray-900">Sunday Robert</strong> didn't start as just another developer. 
                   With a background in computer science and an insatiable curiosity for emerging technologies, 
-                  he recognized early that AI and automation would reshape how businesses operate.
+                  he recognized early that AI and automation would reshape how businesses operate globally.
                 </p>
                 <p>
-                  After witnessing countless Nigerian businesses struggle with outdated processes and 
+                  After witnessing countless businesses struggle with outdated processes and 
                   missed digital opportunities, Sunday founded JR Solvy with a clear mission: 
-                  <strong className="text-indigo-600"> make cutting-edge technology accessible and profitable for every business</strong>.
+                  <strong className="text-indigo-600"> make cutting-edge technology accessible and profitable for every business worldwide</strong>.
                 </p>
                 <p>
                   Today, Sunday leads a team that has delivered <strong className="text-gray-900">50+ successful projects</strong>, 
                   helped clients achieve an average <strong className="text-gray-900">40% increase in ROI</strong>, 
-                  and established JR Solvy as Nigeria's premier digital transformation partner.
+                  and established JR Solvy as a premier global digital transformation partner.
                 </p>
               </div>
 
@@ -140,10 +140,6 @@ const About = () => {
                       <h3 className="text-2xl font-bold text-gray-800">Sunday Robert</h3>
                       <p className="text-indigo-600 font-semibold">Founder & CEO</p>
                       <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
-                        <div className="flex items-center space-x-1">
-                          <MapPin size={14} />
-                          <span>Nigeria</span>
-                        </div>
                         <div className="flex items-center space-x-1">
                           <Calendar size={14} />
                           <span>3+ Years Leading</span>
@@ -188,7 +184,7 @@ const About = () => {
               Our <span className="text-indigo-600">Growth Journey</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From startup to Nigeria's leading digital transformation partner in just 3 years
+              From startup to leading global digital transformation partner in just 3 years
             </p>
           </div>
 
@@ -226,7 +222,7 @@ const About = () => {
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
                 To democratize advanced technology by creating AI-driven solutions and digital experiences 
-                that empower Nigerian businesses to compete globally, increase their revenue by at least 40%, 
+                that empower businesses worldwide to compete globally, increase their revenue by at least 40%, 
                 and build sustainable competitive advantages in the digital economy.
               </p>
             </div>
@@ -239,7 +235,7 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                To become Africa's leading digital transformation partner by 2027, known for delivering 
+                To become the world's leading digital transformation partner by 2027, known for delivering 
                 measurable business results, pioneering AI innovations, and empowering 1000+ businesses 
                 to thrive in the digital-first economy.
               </p>

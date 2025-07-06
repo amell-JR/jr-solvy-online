@@ -83,7 +83,7 @@ const Hero = () => {
 
             {/* Trust Indicator */}
             <div className="pt-6 sm:pt-8 border-t border-border">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Trusted by leading businesses across Nigeria and beyond</p>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Trusted by leading businesses worldwide</p>
               <div className="flex items-center justify-center lg:justify-start space-x-3 sm:space-x-6 opacity-60">
                 <div className="w-16 h-6 sm:w-20 sm:h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">CLIENT 1</div>
                 <div className="w-16 h-6 sm:w-20 sm:h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">CLIENT 2</div>
