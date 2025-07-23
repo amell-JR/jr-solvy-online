@@ -28,23 +28,21 @@ const Hero = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-responsive-3xl font-bold text-foreground leading-tight">
-                Transform Your Business with
-                <span className="text-primary block">AI & Innovation</span>
+                Smart Apps.
+                <span className="text-primary block">Real Impact.</span>
               </h1>
               
               <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                We don't just build websites and apps – we create digital experiences that 
-                <strong className="text-foreground"> increase revenue by 40%</strong> and 
-                <strong className="text-foreground"> reduce operational costs by 60%</strong>.
+                We build intelligent digital products that solve everyday problems — from productivity to personal growth.
               </p>
             </div>
 
             {/* Key Benefits */}
             <div className="space-y-3 sm:space-y-4">
               {[
-                "Custom AI solutions that automate your workflows",
-                "Modern web applications that convert visitors to customers",
-                "Mobile apps that engage users and drive retention"
+                "AI that empowers, not overwhelms",
+                "Beautiful, intuitive user interfaces", 
+                "Designed with integrity, privacy, and performance in mind"
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
                   <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
@@ -66,28 +64,28 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center lg:justify-start">
               <Link
-                to="/contact"
+                to="/projects"
                 className="bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target"
               >
-                <span>Get Free Consultation</span>
+                <span>Explore Tools</span>
                 <ArrowRight size={16} />
               </Link>
               
               <Link
-                to="/projects"
+                to="/contact"
                 className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center shadow-lg hover:shadow-xl focus-ring touch-target"
               >
-                View Success Stories
+                Subscribe for Updates
               </Link>
             </div>
 
             {/* Trust Indicator */}
             <div className="pt-6 sm:pt-8 border-t border-border">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Trusted by leading businesses worldwide</p>
-              <div className="flex items-center justify-center lg:justify-start space-x-3 sm:space-x-6 opacity-60">
-                <div className="w-16 h-6 sm:w-20 sm:h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">CLIENT 1</div>
-                <div className="w-16 h-6 sm:w-20 sm:h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">CLIENT 2</div>
-                <div className="w-16 h-6 sm:w-20 sm:h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">CLIENT 3</div>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Building digital tools for creators, learners, and businesses</p>
+              <div className="flex items-center justify-center lg:justify-start space-x-2 sm:space-x-4 opacity-60">
+                <span className="text-xs font-bold text-primary">TECH THAT MATTERS</span>
+                <span className="text-xs text-muted-foreground">•</span>
+                <span className="text-xs font-bold text-primary">SIMPLE. SECURE. POWERFUL.</span>
               </div>
             </div>
           </div>

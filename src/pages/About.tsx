@@ -89,23 +89,23 @@ const About = () => {
                 Founder's Journey
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-                Meet <span className="text-indigo-600">Sunday Robert</span>
+                Meet <span className="text-indigo-600">Josebert (Sunday Robert)</span>
               </h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Sunday Robert</strong> didn't start as just another developer. 
-                  With a background in computer science and an insatiable curiosity for emerging technologies, 
-                  he recognized early that AI and automation would reshape how businesses operate globally.
+                  <strong className="text-gray-900">Josebert (Sunday Robert)</strong> is a passionate developer and visionary 
+                  with a background in computer science and an insatiable curiosity for emerging technologies. 
+                  He recognized early that AI and practical digital tools could reshape how people learn, work, and live.
                 </p>
                 <p>
-                  After witnessing countless businesses struggle with outdated processes and 
-                  missed digital opportunities, Sunday founded JR Solvy with a clear mission: 
-                  <strong className="text-indigo-600"> make cutting-edge technology accessible and profitable for every business worldwide</strong>.
+                  Guided by a passion for innovation, ethical AI, and meaningful digital transformation, 
+                  Sunday founded JR Solvy with a clear mission: 
+                  <strong className="text-indigo-600"> build software that solves real problems and empowers creators, learners, and businesses</strong>.
                 </p>
                 <p>
-                  Today, Sunday leads a team that has delivered <strong className="text-gray-900">50+ successful projects</strong>, 
-                  helped clients achieve an average <strong className="text-gray-900">40% increase in ROI</strong>, 
-                  and established JR Solvy as a premier global digital transformation partner.
+                  JR Solvy focuses on quality, simplicity, and human-centered design — 
+                  creating technology that works for people rather than against them, 
+                  with <strong className="text-gray-900">integrity, privacy, and performance</strong> at the core of every product.
                 </p>
               </div>
 
@@ -114,16 +114,16 @@ const About = () => {
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                   <div className="flex items-center space-x-3 mb-2">
                     <Trophy className="text-yellow-500" size={24} />
-                    <span className="font-bold text-2xl text-gray-900">50+</span>
+                    <span className="font-bold text-2xl text-gray-900">6+</span>
                   </div>
-                  <p className="text-gray-600 font-medium">Projects Delivered</p>
+                  <p className="text-gray-600 font-medium">Active Products</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                   <div className="flex items-center space-x-3 mb-2">
                     <Users className="text-blue-500" size={24} />
-                    <span className="font-bold text-2xl text-gray-900">98%</span>
+                    <span className="font-bold text-2xl text-gray-900">1000+</span>
                   </div>
-                  <p className="text-gray-600 font-medium">Client Satisfaction</p>
+                  <p className="text-gray-600 font-medium">Users Served</p>
                 </div>
               </div>
             </div>
@@ -221,9 +221,9 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                To democratize advanced technology by creating AI-driven solutions and digital experiences 
-                that empower businesses worldwide to compete globally, increase their revenue by at least 40%, 
-                and build sustainable competitive advantages in the digital economy.
+                JR Solvy is a technology startup focused on creating AI-powered, user-friendly tools for learning, living, and leading. 
+                Our mission is simple: build software that solves real problems, empower creators and learners, 
+                and deliver innovation that's secure, accessible, and impactful.
               </p>
             </div>
 
@@ -235,9 +235,9 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                To become the world's leading digital transformation partner by 2027, known for delivering 
-                measurable business results, pioneering AI innovations, and empowering 1000+ businesses 
-                to thrive in the digital-first economy.
+                To create digital tools that enhance human capability with integrity, privacy, and performance at their core. 
+                We envision a future where technology empowers people to learn better, live smarter, and achieve their goals 
+                through practical, accessible solutions.
               </p>
             </div>
           </div>

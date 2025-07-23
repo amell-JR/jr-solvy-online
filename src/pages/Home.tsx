@@ -1,88 +1,120 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import { Link } from 'react-router-dom';
-import { Brain, Code, Smartphone, Palette, TrendingUp, Users, Shield, Zap, Star, ArrowRight } from 'lucide-react';
+import { Bot, Database, Globe, Shield, Smartphone, Cloud, CheckCircle, Users, Lightbulb, Award, Zap, Star, ArrowRight } from 'lucide-react';
 
 const Home = () => {
-  const services = [
+  const products = [
     {
-      icon: Brain,
-      title: 'AI Solutions & Automation',
-      description: 'Custom AI tools that reduce manual work by 80% and increase efficiency.',
-      benefits: ['Process Automation', 'Predictive Analytics', 'Chatbot Development', 'Data Intelligence'],
-      color: 'bg-purple-600',
-      hoverColor: 'hover:bg-purple-700'
+      icon: Bot,
+      title: "Vibe Coding",
+      description: "An AI-powered interactive eBook that helps beginners learn to code in a fun, practical way.",
+      status: "Live",
+      statusColor: "text-emerald-600",
+      features: ["Interactive Learning", "AI-Powered Guidance", "Practical Projects", "Beginner-Friendly"],
+      color: "text-blue-600",
+      hoverColor: "hover:text-blue-700"
     },
     {
-      icon: Code,
-      title: 'Web Development',
-      description: 'High-converting websites that turn visitors into customers with proven results.',
-      benefits: ['E-commerce Platforms', 'Business Websites', 'Web Applications', 'API Development'],
-      color: 'bg-indigo-600',
-      hoverColor: 'hover:bg-indigo-700'
+      icon: Database,
+      title: "SmartSpend",
+      description: "A personal finance tracker that uses AI to help users budget, save, manage debts, and reach financial goals.",
+      status: "Beta",
+      statusColor: "text-orange-600",
+      features: ["Expense Logging", "Visual Insights", "Savings Goals", "AI Budgeting"],
+      color: "text-emerald-600",
+      hoverColor: "hover:text-emerald-700"
+    },
+    {
+      icon: Globe,
+      title: "ibnGPT",
+      description: "AI-based translator from English to underrepresented languages for language preservation and cultural education.",
+      status: "Coming Soon",
+      statusColor: "text-purple-600",
+      features: ["Language Translation", "Cultural Preservation", "Educational Focus", "Community-Driven"],
+      color: "text-purple-600",
+      hoverColor: "hover:text-purple-700"
+    },
+    {
+      icon: Shield,
+      title: "QR Authenticator",
+      description: "A secure QR code-based system for document and certificate verification, built for authenticity and fraud reduction.",
+      status: "Private Access",
+      statusColor: "text-red-600",
+      features: ["Document Verification", "Fraud Prevention", "Secure Authentication", "Traceability"],
+      color: "text-red-600",
+      hoverColor: "hover:text-red-700"
     },
     {
       icon: Smartphone,
-      title: 'Mobile App Development',
-      description: 'Native and cross-platform apps with 4.8+ star ratings and high user retention.',
-      benefits: ['iOS Development', 'Android Apps', 'Cross-platform', 'App Store Success'],
-      color: 'bg-sky-500',
-      hoverColor: 'hover:bg-sky-600'
+      title: "SpiritGuardian AI",
+      description: "A voice-powered wellness and motivation assistant that combines emotional tone detection with inspirational feedback.",
+      status: "Beta",
+      statusColor: "text-orange-600",
+      features: ["Voice Recognition", "Emotional Analysis", "Wellness Coaching", "Motivational Support"],
+      color: "text-indigo-600",
+      hoverColor: "hover:text-indigo-700"
     },
     {
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'User-centered designs that increase engagement by 150% and reduce bounce rates.',
-      benefits: ['User Research', 'Wireframing', 'Visual Design', 'Usability Testing'],
-      color: 'bg-pink-500',
-      hoverColor: 'hover:bg-pink-600'
+      icon: Cloud,
+      title: "JR Docs Formatter",
+      description: "Capture scanned documents or uploads and instantly convert them into clean Word files using AI.",
+      status: "Private Beta",
+      statusColor: "text-orange-600",
+      features: ["Document Scanning", "AI Formatting", "Word Conversion", "Clean Output"],
+      color: "text-orange-600",
+      hoverColor: "hover:text-orange-700"
     }
   ];
 
   const stats = [
-    { number: '50+', label: 'Projects Completed', sublabel: 'Across 10+ Industries' },
-    { number: '25+', label: 'Happy Clients', sublabel: '98% Satisfaction Rate' },
-    { number: '3+', label: 'Years Experience', sublabel: 'In Digital Innovation' },
-    { number: '40%', label: 'Average ROI Increase', sublabel: 'For Our Clients' }
+    { number: '6+', label: 'Active Products', sublabel: 'Across Multiple Categories' },
+    { number: '1000+', label: 'Users Served', sublabel: 'Growing Community' },
+    { number: '3+', label: 'Years Innovation', sublabel: 'Continuous Development' },
+    { number: '24/7', label: 'Support Available', sublabel: 'Always Here to Help' }
   ];
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      company: "Tech Startup CEO",
-      text: "JR Solvy transformed our business with their AI automation. We saved 15 hours per week!",
+      name: "Alex Johnson",
+      company: "Startup Founder",
+      text: "Vibe Coding made learning to code actually fun! I built my first app in just 3 weeks.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      company: "E-commerce Owner",
-      text: "Our conversion rate increased by 60% after they redesigned our website. Incredible results!",
+      name: "Maria Garcia",
+      company: "Freelancer",
+      text: "SmartSpend helped me save 30% more money and finally reach my financial goals.",
       rating: 5
     },
     {
-      name: "Priya Patel",
-      company: "App Entrepreneur",
-      text: "The mobile app they built has over 10,000 downloads and 4.9 stars. Highly recommend!",
+      name: "David Kim",
+      company: "Small Business Owner",
+      text: "The QR Authenticator system completely eliminated document fraud for our business.",
       rating: 5
     }
   ];
 
   const whyChooseUs = [
     {
-      icon: Shield,
-      title: "Proven Track Record",
-      description: "50+ successful projects with measurable results and client testimonials."
-    },
-    {
-      icon: Zap,
-      title: "Fast Delivery",
-      description: "Most projects completed 30% faster than industry average without compromising quality."
+      icon: Lightbulb,
+      title: "AI that empowers",
+      description: "We create intelligent tools that enhance human capability rather than replacing it, making technology work for you."
     },
     {
       icon: Users,
-      title: "Dedicated Support",
-      description: "24/7 support and maintenance with 2-hour response time guarantee."
+      title: "User-Centered Design",
+      description: "Beautiful, intuitive interfaces that prioritize user experience and accessibility for everyone."
+    },
+    {
+      icon: Award,
+      title: "Built with Integrity",
+      description: "Every product is designed with privacy, security, and ethical considerations at its core."
+    },
+    {
+      icon: Zap,
+      title: "Continuous Innovation",
+      description: "We continuously evolve our tools based on user feedback and emerging technologies for real-world impact."
     }
   ];
 
@@ -90,43 +122,43 @@ const Home = () => {
     <div>
       <Hero />
       
-      {/* Services Preview */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-semibold mb-4">
+      {/* Products Preview */}
+      <section className="bg-background section-padding">
+        <div className="container-responsive">
+          <div className="text-center mb-12 lg:mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
               <Star className="mr-2" size={16} />
-              Premium Digital Services
+              Our Digital Products
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Services That Drive <span className="text-indigo-600">Real Results</span>
+            <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6">
+              Intelligent Tools for <span className="text-primary">Real Problems</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              We don't just deliver projects – we deliver measurable business outcomes that 
-              transform your operations and accelerate growth.
+            <p className="text-responsive-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Intelligent digital tools designed to solve everyday problems for creators, learners, and businesses.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group hover:-translate-y-2"
-              >
-                <div className={`w-16 h-16 ${service.color} ${service.hoverColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                  <service.icon className="text-white" size={28} />
+          {/* Products Preview */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {products.slice(0, 3).map((product, index) => (
+              <div key={index} className="group bg-card rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border interactive-glow">
+                <div className="flex items-center justify-between mb-4 lg:mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center interactive-scale">
+                      <product.icon className={`${product.color} group-hover:${product.hoverColor} transition-colors`} size={24} />
+                    </div>
+                    <h3 className="text-xl lg:text-2xl font-bold text-card-foreground">{product.title}</h3>
+                  </div>
+                  <span className={`text-xs font-semibold px-2 py-1 rounded-full bg-muted ${product.statusColor}`}>
+                    {product.status}
+                  </span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                  {service.description}
-                </p>
+                <p className="text-muted-foreground mb-4 lg:mb-6 leading-relaxed">{product.description}</p>
                 <ul className="space-y-2">
-                  {service.benefits.map((benefit, benefitIndex) => (
-                    <li key={benefitIndex} className="flex items-center text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-indigo-600 rounded-full mr-2"></div>
-                      {benefit}
+                  {product.features.slice(0, 3).map((feature, idx) => (
+                    <li key={idx} className="flex items-center space-x-2 text-sm text-muted-foreground">
+                      <CheckCircle className="text-primary" size={14} />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -134,59 +166,61 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="text-center mt-16">
+          <div className="text-center mt-12 lg:mt-16">
             <Link
-              to="/services"
-              className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-indigo-700 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 space-x-2"
+              to="/projects"
+              className="inline-flex items-center space-x-2 bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl interactive-scale focus-ring"
             >
-              <span>Explore All Services</span>
-              <ArrowRight size={20} />
+              <span>View All Products</span>
+              <ArrowRight size={16} />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-semibold mb-6">
-                <Shield className="mr-2" size={16} />
-                Why JR Solvy?
-              </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-                Results That Speak for <span className="text-indigo-600">Themselves</span>
-              </h2>
-              <div className="space-y-8">
-                {whyChooseUs.map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <item.icon className="text-indigo-600" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
-                    </div>
+      <section className="bg-muted/30 section-padding">
+        <div className="container-responsive">
+          <div className="text-center mb-12 lg:mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-sm font-semibold mb-4">
+              <Award className="mr-2" size={16} />
+              Why JR Solvy?
+            </div>
+            <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6">Why JR Solvy?</h2>
+            <p className="text-responsive-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Technology startup focused on creating practical digital solutions that solve real problems with integrity and innovation.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div className="space-y-6 lg:space-y-8">
+              {whyChooseUs.map((item, index) => (
+                <div key={index} className="flex items-start space-x-4 group">
+                  <div className="w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 interactive-scale">
+                    <item.icon className="text-primary group-hover:scale-110 transition-transform" size={20} />
                   </div>
-                ))}
-              </div>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-lg lg:text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
             
-            <div className="bg-indigo-50 p-8 rounded-3xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Client Success Stories</h3>
+            <div className="bg-card p-6 lg:p-8 rounded-3xl shadow-xl border">
+              <h3 className="text-xl lg:text-2xl font-bold text-card-foreground mb-6">User Testimonials</h3>
               <div className="space-y-6">
                 {testimonials.map((testimonial, index) => (
-                  <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                  <div key={index} className="bg-background/50 p-4 lg:p-6 rounded-2xl border">
                     <div className="flex items-center mb-3">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="text-yellow-400 fill-current" size={16} />
+                        <Star key={i} className="text-primary fill-current" size={14} />
                       ))}
                     </div>
-                    <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
+                    <p className="text-card-foreground mb-4 italic text-sm lg:text-base">"{testimonial.text}"</p>
                     <div>
-                      <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                      <div className="text-sm text-gray-600">{testimonial.company}</div>
+                      <div className="font-semibold text-card-foreground text-sm">{testimonial.name}</div>
+                      <div className="text-xs text-muted-foreground">{testimonial.company}</div>
                     </div>
                   </div>
                 ))}
@@ -197,28 +231,27 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 bg-indigo-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+      <section className="bg-primary text-primary-foreground section-padding">
+        <div className="container-responsive">
+          <div className="text-center mb-12 lg:mb-16">
+            <h2 className="text-responsive-2xl font-bold mb-4 lg:mb-6">
               Our Impact in Numbers
             </h2>
-            <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
-              Real metrics from real projects. These numbers represent the tangible value 
-              we've delivered to businesses like yours.
+            <p className="text-responsive-base text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+              Real metrics from our growing community of users and the impact we're making globally.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="text-4xl lg:text-6xl font-bold text-white mb-2">
+              <div key={index} className="text-center bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-primary-foreground/20">
+                <div className="text-3xl lg:text-5xl font-bold mb-2">
                   {stat.number}
                 </div>
-                <div className="text-white font-semibold mb-1">
+                <div className="font-semibold mb-1 text-sm lg:text-base">
                   {stat.label}
                 </div>
-                <div className="text-indigo-200 text-sm">
+                <div className="text-primary-foreground/80 text-xs lg:text-sm">
                   {stat.sublabel}
                 </div>
               </div>
@@ -228,34 +261,31 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="bg-background section-padding">
+        <div className="container-responsive text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
-              Ready to <span className="text-indigo-600">Transform</span> Your Business?
-            </h2>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-              Join 25+ successful businesses who've already transformed their operations with our 
-              proven digital solutions. Get a free consultation and see exactly how we can help you grow.
+            <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6">Work With Us</h2>
+            <p className="text-responsive-base text-muted-foreground mb-8 lg:mb-12 max-w-2xl mx-auto leading-relaxed">
+              Need a custom tool, consultation, or integration? We collaborate with individuals, startups, and businesses to build tailored solutions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            
+            <div className="flex flex-col xs:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="bg-indigo-600 text-white px-10 py-5 rounded-xl font-semibold text-lg hover:bg-indigo-700 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-2"
+                className="bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl interactive-scale focus-ring"
               >
-                <span>Get Free Consultation</span>
-                <ArrowRight size={20} />
+                Get in Touch
               </Link>
               <Link
                 to="/projects"
-                className="border-2 border-indigo-600 text-indigo-600 px-10 py-5 rounded-xl font-semibold text-lg hover:bg-indigo-600 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl focus-ring"
               >
-                View Success Stories
+                Request a Demo
               </Link>
             </div>
             
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-4">💎 No upfront costs • Free consultation • 30-day money-back guarantee</p>
+            <div className="mt-8 lg:mt-12 pt-6 lg:pt-8 border-t border-border">
+              <p className="text-xs lg:text-sm text-muted-foreground mb-4">✨ Tech that matters • Digital tools for a smarter tomorrow • Simple. Secure. Powerful.</p>
             </div>
           </div>
         </div>

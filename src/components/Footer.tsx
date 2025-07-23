@@ -17,7 +17,7 @@ const Footer = () => {
               <span className="text-lg sm:text-xl font-bold">JR Solvy</span>
             </div>
             <p className="text-primary-foreground/80 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
-              JR Digital Insights - Empowering businesses worldwide with AI-powered tech solutions and digital transformation.
+              Smart Apps. Real Impact. Building intelligent digital products that solve everyday problems.
             </p>
           </div>
 
@@ -48,11 +48,11 @@ const Footer = () => {
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Services</h3>
             <ul className="space-y-2 sm:space-y-3 text-primary-foreground/80">
               {[
-                "AI Tools Development",
-                "Web Development", 
-                "Mobile Apps",
-                "Digital Marketing",
-                "Graphics Design"
+                "Vibe Coding",
+                "SmartSpend", 
+                "ibnGPT",
+                "QR Authenticator",
+                "SpiritGuardian AI"
               ].map((service) => (
                 <li key={service} className="text-sm">{service}</li>
               ))}
@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center justify-center sm:justify-start space-x-2 text-primary-foreground/80">
                 <Mail size={14} className="flex-shrink-0" />
-                <span className="text-xs sm:text-sm">info@jrsolvy.com</span>
+                <span className="text-xs sm:text-sm">robertsunday333@gmail.com</span>
               </div>
             </div>
             
@@ -91,7 +91,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
           <p className="text-primary-foreground/80 text-xs sm:text-sm">
-            © 2025 JR Solvy - JR Digital Insights. All rights reserved.
+            © 2025 JR Solvy. All rights reserved.
           </p>
         </div>
       </div>
