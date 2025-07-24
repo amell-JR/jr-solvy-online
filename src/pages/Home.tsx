@@ -8,63 +8,53 @@ const Home = () => {
   const products = [
     {
       icon: Bot,
-      title: "Vibe Coding",
-      description: "An AI-powered interactive eBook that helps beginners learn to code in a fun, practical way.",
+      title: "Ask JR",
+      description: "Your Personal AI Assistant - AI-powered helper that answers questions, assists with tasks, and learns from your needs.",
       status: "Live",
       statusColor: "text-emerald-600",
-      features: ["Interactive Learning", "AI-Powered Guidance", "Practical Projects", "Beginner-Friendly"],
+      features: ["Question Answering", "Task Assistance", "Personalized Learning", "24/7 Availability"],
       color: "text-blue-600",
       hoverColor: "hover:text-blue-700"
     },
     {
-      icon: Database,
-      title: "SmartSpend",
-      description: "A personal finance tracker that uses AI to help users budget, save, manage debts, and reach financial goals.",
-      status: "Beta",
-      statusColor: "text-orange-600",
-      features: ["Expense Logging", "Visual Insights", "Savings Goals", "AI Budgeting"],
-      color: "text-emerald-600",
-      hoverColor: "hover:text-emerald-700"
-    },
-    {
       icon: Globe,
       title: "ibnGPT",
-      description: "AI-based translator from English to underrepresented languages for language preservation and cultural education.",
+      description: "Ibibio Language Translator - Bridging cultures with an AI that translates English ↔ Ibibio and other local dialects.",
       status: "Coming Soon",
       statusColor: "text-purple-600",
-      features: ["Language Translation", "Cultural Preservation", "Educational Focus", "Community-Driven"],
+      features: ["Language Translation", "Cultural Preservation", "Local Dialects", "Community-Driven"],
       color: "text-purple-600",
       hoverColor: "hover:text-purple-700"
     },
     {
+      icon: Database,
+      title: "SmartSpend",
+      description: "AI Budget & Finance Tracker - Track your expenses, savings, and get personalized financial advice — powered by AI.",
+      status: "Beta",
+      statusColor: "text-orange-600",
+      features: ["Expense Tracking", "AI Financial Advice", "Savings Goals", "Budget Planning"],
+      color: "text-emerald-600",
+      hoverColor: "hover:text-emerald-700"
+    },
+    {
       icon: Shield,
-      title: "QR Authenticator",
-      description: "A secure QR code-based system for document and certificate verification, built for authenticity and fraud reduction.",
-      status: "Private Access",
-      statusColor: "text-red-600",
-      features: ["Document Verification", "Fraud Prevention", "Secure Authentication", "Traceability"],
+      title: "Uyo SafeAlert",
+      description: "Community Safety App - Real-time emergency alert system with QR-based ID verification and security tracking.",
+      status: "Beta",
+      statusColor: "text-orange-600",
+      features: ["Emergency Alerts", "QR ID Verification", "Security Tracking", "Community Safety"],
       color: "text-red-600",
       hoverColor: "hover:text-red-700"
     },
     {
       icon: Smartphone,
-      title: "SpiritGuardian AI",
-      description: "A voice-powered wellness and motivation assistant that combines emotional tone detection with inspirational feedback.",
-      status: "Beta",
-      statusColor: "text-orange-600",
-      features: ["Voice Recognition", "Emotional Analysis", "Wellness Coaching", "Motivational Support"],
+      title: "Vibe Coding eBook",
+      description: "Beginner-friendly guide to AI-enhanced coding. Digital download available with interactive examples and tutorials.",
+      status: "Live",
+      statusColor: "text-emerald-600",
+      features: ["AI-Enhanced Coding", "Interactive Examples", "Beginner-Friendly", "Digital Download"],
       color: "text-indigo-600",
       hoverColor: "hover:text-indigo-700"
-    },
-    {
-      icon: Cloud,
-      title: "JR Docs Formatter",
-      description: "Capture scanned documents or uploads and instantly convert them into clean Word files using AI.",
-      status: "Private Beta",
-      statusColor: "text-orange-600",
-      features: ["Document Scanning", "AI Formatting", "Word Conversion", "Clean Output"],
-      color: "text-orange-600",
-      hoverColor: "hover:text-orange-700"
     }
   ];
 

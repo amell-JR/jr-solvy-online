@@ -60,20 +60,12 @@ const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-indigo-50/20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-full text-sm font-semibold mb-8 shadow-lg">
-              <Rocket className="mr-2" size={16} />
-              Meet the Founder & Visionary
-            </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
-              The Story Behind <span className="text-indigo-600">JR Solvy</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              From a passionate developer to a leading global digital transformation expert, 
-              discover the journey that built JR Solvy into the innovation powerhouse it is today.
+      <section className="bg-background section-padding">
+        <div className="container-responsive">
+          <div className="text-center mb-12 lg:mb-16">
+            <h1 className="text-responsive-3xl font-bold text-foreground mb-4 lg:mb-6">About JR Solvy</h1>
+            <p className="text-responsive-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              We believe that the future belongs to those who leverage AI, automation, and smart systems to solve real-world problems.
             </p>
           </div>
         </div>
@@ -209,36 +201,63 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Target className="text-white" size={28} />
-                </div>
-                <h3 className="text-3xl font-bold text-gray-900">Our Mission</h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                JR Solvy is a technology startup focused on creating AI-powered, user-friendly tools for learning, living, and leading. 
-                Our mission is simple: build software that solves real problems, empower creators and learners, 
-                and deliver innovation that's secure, accessible, and impactful.
+      {/* Vision & Services */}
+      <section className="bg-muted/30 section-padding">
+        <div className="container-responsive">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+            <div>
+              <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6">Our Vision</h2>
+              <p className="text-responsive-base text-muted-foreground leading-relaxed mb-6">
+                At JR Solvy, we believe that the future belongs to those who leverage AI, automation, and smart systems to solve real-world problems. We're on a mission to simplify innovation and bring cutting-edge solutions to everyday users — from students to enterprises.
               </p>
+              
+              <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6 mt-8">What We Do</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-card p-4 rounded-lg border">
+                  <h3 className="font-semibold text-card-foreground mb-2">AI Applications</h3>
+                  <p className="text-sm text-muted-foreground">Intelligent tools for education, productivity, and decision-making</p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border">
+                  <h3 className="font-semibold text-card-foreground mb-2">Tech Consulting</h3>
+                  <p className="text-sm text-muted-foreground">Strategy & implementation for startups and businesses</p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border">
+                  <h3 className="font-semibold text-card-foreground mb-2">Custom Software</h3>
+                  <p className="text-sm text-muted-foreground">We build what you imagine</p>
+                </div>
+                <div className="bg-card p-4 rounded-lg border">
+                  <h3 className="font-semibold text-card-foreground mb-2">Digital Services</h3>
+                  <p className="text-sm text-muted-foreground">Automation, data analytics, and cloud integration</p>
+                </div>
+              </div>
             </div>
-
-            <div className="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
-              <div className="flex items-center space-x-4 mb-8">
-                <div className="w-16 h-16 bg-sky-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Eye className="text-white" size={28} />
+            
+            {/* Team Section */}
+            <div className="bg-card p-6 lg:p-8 rounded-3xl shadow-xl border">
+              <h2 className="text-responsive-2xl font-bold text-card-foreground mb-6 lg:mb-8">Meet the Team</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="text-center group">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center interactive-scale">
+                    <Users className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                  </div>
+                  <h3 className="text-lg lg:text-xl font-bold text-card-foreground mb-2">Sunday Robert</h3>
+                  <p className="text-muted-foreground text-sm mb-3">Founder, Software Engineer, AI Prompt Engineer</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Building the future through intelligent software solutions and AI-powered innovation.
+                  </p>
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
+                
+                <div className="text-center group">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center interactive-scale">
+                    <Users className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                  </div>
+                  <h3 className="text-lg lg:text-xl font-bold text-card-foreground mb-2">Our Network</h3>
+                  <p className="text-muted-foreground text-sm mb-3">Designers, Developers & AI Agents</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Supported by a network of talented designers, developers, and AI agents working together.
+                  </p>
+                </div>
               </div>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                To create digital tools that enhance human capability with integrity, privacy, and performance at their core. 
-                We envision a future where technology empowers people to learn better, live smarter, and achieve their goals 
-                through practical, accessible solutions.
-              </p>
             </div>
           </div>
         </div>

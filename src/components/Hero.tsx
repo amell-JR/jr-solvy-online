@@ -28,12 +28,12 @@ const Hero = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-responsive-3xl font-bold text-foreground leading-tight">
-                Smart Apps.
-                <span className="text-primary block">Real Impact.</span>
+                Building AI-Powered
+                <span className="text-primary block">Solutions for the Future</span>
               </h1>
               
               <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                We build intelligent digital products that solve everyday problems — from productivity to personal growth.
+                JR Solvy creates intelligent software tools that help people and businesses achieve more — through automation, data, and creativity.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ const Hero = () => {
                 to="/projects"
                 className="bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target"
               >
-                <span>Explore Tools</span>
+                <span>Explore Our Products</span>
                 <ArrowRight size={16} />
               </Link>
               
@@ -75,7 +75,7 @@ const Hero = () => {
                 to="/contact"
                 className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center shadow-lg hover:shadow-xl focus-ring touch-target"
               >
-                Subscribe for Updates
+                Contact Us
               </Link>
             </div>
 

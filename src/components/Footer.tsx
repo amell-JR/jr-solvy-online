@@ -17,7 +17,7 @@ const Footer = () => {
               <span className="text-lg sm:text-xl font-bold">JR Solvy</span>
             </div>
             <p className="text-primary-foreground/80 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
-              Smart Apps. Real Impact. Building intelligent digital products that solve everyday problems.
+              Empowering Innovation. Accelerating Tomorrow. Building AI-powered solutions for the future.
             </p>
           </div>
 
@@ -48,11 +48,11 @@ const Footer = () => {
             <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Services</h3>
             <ul className="space-y-2 sm:space-y-3 text-primary-foreground/80">
               {[
-                "Vibe Coding",
-                "SmartSpend", 
-                "ibnGPT",
-                "QR Authenticator",
-                "SpiritGuardian AI"
+                "Ask JR",
+                "ibnGPT", 
+                "SmartSpend",
+                "Uyo SafeAlert",
+                "Vibe Coding eBook"
               ].map((service) => (
                 <li key={service} className="text-sm">{service}</li>
               ))}
@@ -90,8 +90,11 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
-          <p className="text-primary-foreground/80 text-xs sm:text-sm">
-            © 2025 JR Solvy. All rights reserved.
+          <p className="text-primary-foreground/80 text-xs sm:text-sm mb-2">
+            JR Solvy © 2025 | Empowering Innovation. Accelerating Tomorrow.
+          </p>
+          <p className="text-primary-foreground/60 text-xs">
+            Proudly building the future — from anywhere in the world.
           </p>
         </div>
       </div>
