@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import Newsletter from '../components/Newsletter';
 import { Link } from 'react-router-dom';
 import { Bot, Database, Globe, Shield, Smartphone, Cloud, CheckCircle, Users, Lightbulb, Award, Zap, Star, ArrowRight } from 'lucide-react';
 
@@ -290,6 +291,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Newsletter Section */}
+      <Newsletter />
     </div>
   );
 };
