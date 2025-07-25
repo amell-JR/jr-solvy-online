@@ -5,7 +5,15 @@ import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  
+  // Safely get location, with fallback
+  let location;
+  try {
+    location = useLocation();
+  } catch (error) {
+    // Fallback if not in router context
+    location = { pathname: '/' };
+  }
 
   const navigation = [
     { name: 'Home', href: '/' },
