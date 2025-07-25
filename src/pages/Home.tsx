@@ -221,35 +221,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-primary text-primary-foreground section-padding">
-        <div className="container-responsive">
-          <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-responsive-2xl font-bold mb-4 lg:mb-6">
-              Our Impact in Numbers
-            </h2>
-            <p className="text-responsive-base text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
-              Real metrics from our growing community of users and the impact we're making globally.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-primary-foreground/20">
-                <div className="text-3xl lg:text-5xl font-bold mb-2">
-                  {stat.number}
-                </div>
-                <div className="font-semibold mb-1 text-sm lg:text-base">
-                  {stat.label}
-                </div>
-                <div className="text-primary-foreground/80 text-xs lg:text-sm">
-                  {stat.sublabel}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="bg-background section-padding">
