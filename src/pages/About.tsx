@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Users, Target, Eye, Award, Code, Brain, Calendar, Trophy, Rocket } from 'lucide-react';
 
 const About = () => {
@@ -308,18 +309,18 @@ const About = () => {
               Get a free consultation and discover exactly how we can accelerate your growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-white text-indigo-600 px-10 py-5 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-xl hover:shadow-2xl"
               >
                 Schedule Free Consultation
-              </a>
-              <a
-                href="/projects"
+              </Link>
+              <Link
+                to="/projects"
                 className="border-2 border-white text-white px-10 py-5 rounded-xl font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 View Success Stories
-              </a>
+              </Link>
             </div>
           </div>
         </div>
