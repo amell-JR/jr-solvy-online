@@ -18,31 +18,33 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <div className="min-h-screen flex flex-col">
-          <Navbar />
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/testimonials" element={<Testimonials />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  return (
+    <BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <div className="min-h-screen flex flex-col">
+            <Navbar />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/testimonials" element={<Testimonials />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+          <Toaster />
+          <Sonner />
+        </TooltipProvider>
+      </QueryClientProvider>
+    </BrowserRouter>
+  );
+};
 
 export default App;
