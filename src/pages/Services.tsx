@@ -9,44 +9,23 @@ const Services = () => {
     {
       icon: Brain,
       title: 'AI Solutions & Automation',
-      description: 'Custom AI tools, chatbots, and automation systems to streamline your business processes.',
-      features: ['Custom AI Development', 'Process Automation', 'Machine Learning Models', 'AI Integration'],
+      description: 'Custom AI tools and automation systems to streamline your business processes.',
+      features: ['Custom Development', 'Process Automation', 'System Integration'],
       color: 'bg-purple-600'
     },
     {
       icon: Code,
       title: 'Web Development',
       description: 'Modern, responsive websites and web applications built with cutting-edge technologies.',
-      features: ['Responsive Design', 'E-commerce Solutions', 'Web Applications', 'CMS Development'],
+      features: ['Responsive Design', 'Web Applications', 'CMS Development'],
       color: 'bg-indigo-600'
     },
     {
       icon: Smartphone,
       title: 'Mobile App Development',
       description: 'Native and cross-platform mobile applications for iOS and Android platforms.',
-      features: ['iOS Development', 'Android Development', 'Cross-platform Apps', 'App Store Optimization'],
+      features: ['iOS Development', 'Android Development', 'Cross-platform Apps'],
       color: 'bg-sky-500'
-    },
-    {
-      icon: Palette,
-      title: 'Graphics & UI/UX Design',
-      description: 'Creative design services including branding, UI/UX design, and visual identity.',
-      features: ['Brand Identity', 'UI/UX Design', 'Logo Design', 'Marketing Materials'],
-      color: 'bg-pink-500'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Digital Marketing',
-      description: 'Comprehensive digital marketing strategies to grow your online presence.',
-      features: ['SEO Optimization', 'Social Media Marketing', 'Content Strategy', 'Analytics & Reporting'],
-      color: 'bg-emerald-500'
-    },
-    {
-      icon: Settings,
-      title: 'IT Consulting',
-      description: 'Strategic technology consulting to help you make informed digital decisions.',
-      features: ['Technology Strategy', 'System Integration', 'Digital Transformation', 'Technical Audits'],
-      color: 'bg-gray-700'
     }
   ];
 
@@ -54,22 +33,22 @@ const Services = () => {
     {
       step: '01',
       title: 'Discovery',
-      description: 'We start by understanding your business goals, challenges, and requirements through detailed consultation.'
+      description: 'Understanding your requirements and goals.'
     },
     {
       step: '02',
-      title: 'Strategy',
-      description: 'We develop a comprehensive strategy and roadmap tailored to your specific needs and objectives.'
+      title: 'Planning',
+      description: 'Developing the project strategy and roadmap.'
     },
     {
       step: '03',
       title: 'Development',
-      description: 'Our expert team brings your vision to life using the latest technologies and best practices.'
+      description: 'Building your solution with modern technologies.'
     },
     {
       step: '04',
-      title: 'Launch & Support',
-      description: 'We ensure a smooth launch and provide ongoing support to guarantee your continued success.'
+      title: 'Launch',
+      description: 'Deploying and supporting your project.'
     }
   ];
 

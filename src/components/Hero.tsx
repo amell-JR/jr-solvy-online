@@ -4,11 +4,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Award, Users, Zap } from 'lucide-react';
 
 const Hero = () => {
-  const achievements = [
-    { icon: Award, text: "50+ Projects Delivered", color: "text-emerald-600" },
-    { icon: Users, text: "25+ Happy Clients", color: "text-blue-600" },
-    { icon: Zap, text: "98% Success Rate", color: "text-purple-600" }
-  ];
 
   return (
     <section className="bg-background section-padding relative overflow-hidden">
@@ -39,35 +34,27 @@ const Hero = () => {
 
             {/* Key Benefits */}
             <div className="space-y-3 sm:space-y-4">
-              {[
-                "AI that empowers, not overwhelms",
-                "Beautiful, intuitive user interfaces", 
-                "Designed with integrity, privacy, and performance in mind"
-              ].map((benefit, index) => (
-                <div key={index} className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
-                  <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
-                  <span className="text-muted-foreground font-medium text-sm sm:text-base">{benefit}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Achievement Stats */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 py-4 sm:py-6">
-              {achievements.map((achievement, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <achievement.icon className="text-primary" size={20} />
-                  <span className="text-foreground font-semibold text-xs sm:text-sm">{achievement.text}</span>
-                </div>
-              ))}
+              <div className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
+                <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
+                <span className="text-muted-foreground font-medium text-sm sm:text-base">Professional digital solutions</span>
+              </div>
+              <div className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
+                <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
+                <span className="text-muted-foreground font-medium text-sm sm:text-base">Modern technology stack</span>
+              </div>
+              <div className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
+                <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
+                <span className="text-muted-foreground font-medium text-sm sm:text-base">Quality & reliability focused</span>
+              </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center lg:justify-start">
               <Link
-                to="/projects"
+                to="/services"
                 className="bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target"
               >
-                <span>Explore Our Products</span>
+                <span>View Services</span>
                 <ArrowRight size={16} />
               </Link>
               
@@ -81,12 +68,7 @@ const Hero = () => {
 
             {/* Trust Indicator */}
             <div className="pt-6 sm:pt-8 border-t border-border">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Building digital tools for creators, learners, and businesses</p>
-              <div className="flex items-center justify-center lg:justify-start space-x-2 sm:space-x-4 opacity-60">
-                <span className="text-xs font-bold text-primary">TECH THAT MATTERS</span>
-                <span className="text-xs text-muted-foreground">•</span>
-                <span className="text-xs font-bold text-primary">SIMPLE. SECURE. POWERFUL.</span>
-              </div>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Professional digital solutions</p>
             </div>
           </div>
 
@@ -111,15 +93,15 @@ const Hero = () => {
               {/* Services Preview */}
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center justify-between p-3 sm:p-4 bg-primary/10 rounded-lg sm:rounded-xl">
-                  <span className="text-card-foreground font-medium text-sm sm:text-base">AI Solutions</span>
-                  <span className="text-primary font-bold text-xs sm:text-sm">Active</span>
+                  <span className="text-card-foreground font-medium text-sm sm:text-base">Web Development</span>
+                  <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
                 </div>
                 <div className="flex items-center justify-between p-3 sm:p-4 bg-accent/20 rounded-lg sm:rounded-xl">
-                  <span className="text-card-foreground font-medium text-sm sm:text-base">Web Development</span>
-                  <span className="text-primary font-bold text-xs sm:text-sm">Ready</span>
+                  <span className="text-card-foreground font-medium text-sm sm:text-base">Mobile Apps</span>
+                  <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
                 </div>
                 <div className="flex items-center justify-between p-3 sm:p-4 bg-secondary/50 rounded-lg sm:rounded-xl">
-                  <span className="text-card-foreground font-medium text-sm sm:text-base">Mobile Apps</span>
+                  <span className="text-card-foreground font-medium text-sm sm:text-base">Consulting</span>
                   <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
                 </div>
               </div>
@@ -128,12 +110,12 @@ const Hero = () => {
               <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border">
                 <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-card-foreground">3+</div>
-                    <div className="text-xs sm:text-sm text-muted-foreground">Years Experience</div>
+                    <div className="text-xl sm:text-2xl font-bold text-card-foreground">Pro</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground">Quality</div>
                   </div>
                   <div>
                     <div className="text-xl sm:text-2xl font-bold text-card-foreground">24/7</div>
-                    <div className="text-xs sm:text-sm text-muted-foreground">Support Available</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground">Support</div>
                   </div>
                 </div>
               </div>

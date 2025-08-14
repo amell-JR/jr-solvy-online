@@ -7,55 +7,53 @@ const About = () => {
   const values = [
     {
       icon: Brain,
-      title: 'Innovation First',
-      description: 'We pioneer cutting-edge AI and digital solutions that give our clients a competitive edge in their markets worldwide.'
+      title: 'Innovation',
+      description: 'We use cutting-edge technologies to create modern digital solutions.'
     },
     {
       icon: Users,
-      title: 'Client Success',
-      description: 'Every project is measured by one metric: did we help our client achieve their business goals and increase their revenue?'
+      title: 'Client Focus',
+      description: 'Every project is designed with the client\'s goals and needs in mind.'
     },
     {
       icon: Award,
-      title: 'Excellence Delivered',
-      description: 'We deliver exceptional quality on time, every time. Our 98% client satisfaction rate speaks for itself.'
+      title: 'Quality',
+      description: 'We deliver high-quality solutions on time and within budget.'
     },
     {
       icon: Target,
-      title: 'Results-Driven',
-      description: 'We focus on measurable outcomes that drive real business value, with an average 40% ROI increase for our clients.'
+      title: 'Results',
+      description: 'We focus on measurable outcomes that drive real value.'
     }
   ];
 
   const journey = [
     {
       year: "2021",
-      title: "The Beginning",
-      description: "Started with a vision to make AI accessible to businesses worldwide"
+      title: "Foundation",
+      description: "Started the journey in digital solutions"
     },
     {
       year: "2022",
-      title: "First Breakthrough",
-      description: "Delivered our first AI automation system, saving a client 20 hours per week"
+      title: "Growth",
+      description: "Expanded services and expertise"
     },
     {
       year: "2023",
-      title: "Rapid Growth",
-      description: "Expanded to serve 25+ clients globally with proven digital transformation results"
+      title: "Development",
+      description: "Enhanced capabilities and client base"
     },
     {
       year: "2024",
-      title: "Innovation Hub",
-      description: "Established as a leading global digital innovation partner with 50+ successful projects"
+      title: "Innovation",
+      description: "Continuing to deliver quality solutions"
     }
   ];
 
   const expertise = [
-    { skill: "AI & Machine Learning", level: 95 },
-    { skill: "Web Development", level: 98 },
-    { skill: "Mobile Development", level: 92 },
-    { skill: "UI/UX Design", level: 90 },
-    { skill: "Digital Strategy", level: 96 }
+    { skill: "Web Development", level: 90 },
+    { skill: "Mobile Development", level: 85 },
+    { skill: "UI/UX Design", level: 80 }
   ];
 
   return (

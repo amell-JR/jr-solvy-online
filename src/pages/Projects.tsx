@@ -7,55 +7,19 @@ import SEOHead from '@/components/SEOHead';
 const Projects = () => {
   const projects = [
     {
-      title: 'IBIVoice',
-      category: 'AI Voice Assistant',
-      description: 'An intelligent voice assistant application with natural language processing capabilities, built to help users with daily tasks and information retrieval.',
-      tech: ['React Native', 'AI/ML', 'Voice Recognition', 'Natural Language Processing'],
-      image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?w=500',
-      icon: Brain,
-      color: 'bg-purple-600'
-    },
-    {
-      title: 'Vibe Coding',
-      category: 'Educational Platform',
-      description: 'A comprehensive coding learning platform featuring interactive tutorials, code challenges, and progress tracking for aspiring developers.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Code Editor Integration'],
+      title: 'Web Application',
+      category: 'Full Stack Development',
+      description: 'A modern web application built with the latest technologies.',
+      tech: ['React', 'Node.js', 'TypeScript'],
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500',
       icon: Globe,
       color: 'bg-sky-500'
     },
     {
-      title: 'Uyo SafeAlert',
-      category: 'Safety & Security App',
-      description: 'A community safety application that allows users to report incidents, receive safety alerts, and connect with local authorities in Uyo.',
-      tech: ['React Native', 'Firebase', 'Real-time Notifications', 'Geolocation'],
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500',
-      icon: Shield,
-      color: 'bg-red-500'
-    },
-    {
-      title: 'E-Commerce Dashboard',
-      category: 'Business Analytics',
-      description: 'A comprehensive analytics dashboard for e-commerce businesses with real-time sales tracking, inventory management, and customer insights.',
-      tech: ['React', 'TypeScript', 'Charts.js', 'REST API'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500',
-      icon: Globe,
-      color: 'bg-emerald-500'
-    },
-    {
-      title: 'AI Content Generator',
-      category: 'AI Tool',
-      description: 'An AI-powered content creation tool that helps businesses generate marketing copy, blog posts, and social media content automatically.',
-      tech: ['Python', 'OpenAI API', 'React', 'Natural Language Processing'],
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500',
-      icon: Brain,
-      color: 'bg-indigo-600'
-    },
-    {
-      title: 'Task Management App',
-      category: 'Productivity Tool',
-      description: 'A cross-platform task management application with team collaboration features, deadline tracking, and progress visualization.',
-      tech: ['Flutter', 'Firebase', 'Push Notifications', 'Cloud Sync'],
+      title: 'Mobile App',
+      category: 'Mobile Development',
+      description: 'Cross-platform mobile application for iOS and Android.',
+      tech: ['React Native', 'Firebase', 'API Integration'],
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500',
       icon: Smartphone,
       color: 'bg-orange-500'
@@ -63,8 +27,8 @@ const Projects = () => {
   ];
 
   const technologies = [
-    'React', 'React Native', 'Flutter', 'Node.js', 'Python', 'TypeScript', 
-    'Firebase', 'MongoDB', 'AI/ML', 'OpenAI API', 'Tailwind CSS', 'Next.js'
+    'React', 'React Native', 'Node.js', 'TypeScript', 
+    'Firebase', 'MongoDB', 'Tailwind CSS', 'Next.js'
   ];
 
   return (
@@ -199,20 +163,20 @@ const Projects = () => {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">50+</div>
-              <div className="text-indigo-100 font-medium">Projects Completed</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">Pro</div>
+              <div className="text-indigo-100 font-medium">Quality Work</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">25+</div>
-              <div className="text-indigo-100 font-medium">Happy Clients</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">Fast</div>
+              <div className="text-indigo-100 font-medium">Delivery</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">98%</div>
-              <div className="text-indigo-100 font-medium">Client Satisfaction</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">Modern</div>
+              <div className="text-indigo-100 font-medium">Technology</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">3+</div>
-              <div className="text-indigo-100 font-medium">Years Experience</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">24/7</div>
+              <div className="text-indigo-100 font-medium">Support</div>
             </div>
           </div>
         </div>
