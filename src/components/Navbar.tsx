@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,18 +28,22 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-background/95 backdrop-blur-md border-b sticky top-0 z-50 transition-all duration-200">
+    <nav className="bg-white/80 backdrop-blur-xl border-b border-white/20 sticky top-0 z-50 transition-all duration-300 shadow-sm">
       <div className="container-responsive">
         <div className="flex justify-between items-center h-14 sm:h-16">
           <div className="flex items-center">
             <Link 
               to="/" 
-              className="flex items-center space-x-2 sm:space-x-3 focus-ring rounded-lg p-1 -m-1"
+              className="flex items-center space-x-2 sm:space-x-3 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/5 transition-all duration-300 group"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary rounded-lg flex items-center justify-center interactive-scale">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center interactive-scale shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <span className="text-primary-foreground font-bold text-sm sm:text-base">JR</span>
+                <Sparkles className="absolute w-3 h-3 text-primary-foreground/50 animate-pulse" />
               </div>
-              <span className="text-lg sm:text-xl font-bold text-foreground">JR Solvy</span>
+              <div className="flex flex-col">
+                <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">JR Solvy</span>
+                <span className="text-xs text-muted-foreground font-medium hidden sm:block">Digital Innovation</span>
+              </div>
             </Link>
           </div>
 
@@ -49,13 +53,16 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-3 lg:px-4 py-2 rounded-md text-sm lg:text-base font-medium transition-all duration-200 focus-ring touch-target ${
+                className={`px-3 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-semibold transition-all duration-300 focus-ring touch-target relative group ${
                   isActive(item.href)
-                    ? 'text-primary bg-primary/10 shadow-sm'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/80'
+                    ? 'text-primary bg-gradient-to-r from-primary/10 to-primary/5 shadow-sm border border-primary/20'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-gradient-to-r hover:from-primary/5 hover:to-accent/5'
                 }`}
               >
                 {item.name}
+                {isActive(item.href) && (
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full"></div>
+                )}
               </Link>
             ))}
           </div>
@@ -64,7 +71,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-muted-foreground hover:text-foreground transition-colors focus-ring rounded-md p-2 touch-target"
+              className="text-muted-foreground hover:text-foreground transition-all duration-300 focus-ring rounded-xl p-2 touch-target hover:bg-primary/5"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isOpen}
             >
@@ -75,23 +82,23 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div 
-          className={`md:hidden transition-all duration-300 ease-smooth overflow-hidden ${
+          className={`md:hidden transition-all duration-500 ease-smooth overflow-hidden ${
             isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="px-2 pt-2 pb-4 space-y-1 bg-background border-t">
+          <div className="px-2 pt-4 pb-6 space-y-2 bg-gradient-to-b from-white/50 to-white/80 backdrop-blur-xl border-t border-white/20 rounded-b-2xl">
             {navigation.map((item, index) => (
               <Link
                 key={item.name}
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 focus-ring touch-target ${
+                className={`block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-300 focus-ring touch-target ${
                   isActive(item.href)
-                    ? 'text-primary bg-primary/10 shadow-sm'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/80'
+                    ? 'text-primary bg-gradient-to-r from-primary/10 to-primary/5 shadow-sm border border-primary/20'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-gradient-to-r hover:from-primary/5 hover:to-accent/5'
                 }`}
                 style={{
-                  animationDelay: `${index * 50}ms`
+                  animationDelay: `${index * 100}ms`
                 }}
               >
                 {item.name}

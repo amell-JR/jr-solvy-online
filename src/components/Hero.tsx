@@ -1,50 +1,59 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Award, Users, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle, Award, Users, Zap, Play, Star } from 'lucide-react';
 
 const Hero = () => {
 
   return (
-    <section className="bg-background section-padding relative overflow-hidden">
+    <section className="bg-gradient-to-br from-background via-primary/5 to-accent/10 section-padding relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-primary/5"></div>
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-accent/10 transform skew-x-12 translate-x-1/4 hidden lg:block"></div>
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+      </div>
       
       <div className="container-responsive relative">
         <div className="grid-responsive-2 items-center gap-8 lg:gap-16">
           {/* Content */}
           <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
             {/* Brand Badge */}
-            <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-primary text-primary-foreground rounded-full text-xs sm:text-sm font-semibold shadow-lg">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary-foreground rounded-full mr-2 sm:mr-3 animate-pulse"></span>
+            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground rounded-full text-xs sm:text-sm font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer">
+              <Star className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 animate-spin" fill="currentColor" />
               Award-Winning Digital Solutions
             </div>
             
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-responsive-3xl font-bold text-foreground leading-tight">
                 Building AI-Powered
-                <span className="text-primary block">Solutions for the Future</span>
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent block">Solutions for the Future</span>
               </h1>
               
-              <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
                 JR Solvy creates intelligent software tools that help people and businesses achieve more — through automation, data, and creativity.
               </p>
             </div>
 
             {/* Key Benefits */}
-            <div className="space-y-3 sm:space-y-4">
-              <div className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
-                <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
-                <span className="text-muted-foreground font-medium text-sm sm:text-base">Professional digital solutions</span>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
+              <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <CheckCircle className="text-primary" size={16} />
+                </div>
+                <span className="text-foreground font-semibold text-sm">Professional</span>
               </div>
-              <div className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
-                <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
-                <span className="text-muted-foreground font-medium text-sm sm:text-base">Modern technology stack</span>
+              <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <Zap className="text-accent" size={16} />
+                </div>
+                <span className="text-foreground font-semibold text-sm">Modern Tech</span>
               </div>
-              <div className="flex items-start space-x-3 text-left max-w-md mx-auto lg:mx-0">
-                <CheckCircle className="text-primary mt-0.5 sm:mt-1 flex-shrink-0" size={16} />
-                <span className="text-muted-foreground font-medium text-sm sm:text-base">Quality & reliability focused</span>
+              <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-8 h-8 bg-emerald-500/10 rounded-lg flex items-center justify-center">
+                  <Award className="text-emerald-500" size={16} />
+                </div>
+                <span className="text-foreground font-semibold text-sm">Quality First</span>
               </div>
             </div>
 
@@ -52,69 +61,96 @@ const Hero = () => {
             <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center lg:justify-start">
               <Link
                 to="/services"
-                className="bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target"
+                className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground btn-responsive rounded-2xl font-bold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target group"
               >
                 <span>View Services</span>
-                <ArrowRight size={16} />
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
               
               <Link
                 to="/contact"
-                className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center shadow-lg hover:shadow-xl focus-ring touch-target"
+                className="bg-white/80 backdrop-blur-sm border-2 border-primary/20 text-primary btn-responsive rounded-2xl font-bold hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center shadow-lg hover:shadow-xl focus-ring touch-target group"
               >
-                Contact Us
+                <span className="flex items-center justify-center space-x-2">
+                  <span>Contact Us</span>
+                  <Play size={14} className="group-hover:scale-110 transition-transform duration-300" />
+                </span>
               </Link>
             </div>
 
             {/* Trust Indicator */}
-            <div className="pt-6 sm:pt-8 border-t border-border">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 text-center lg:text-left">Professional digital solutions</p>
+            <div className="pt-6 sm:pt-8">
+              <div className="flex items-center justify-center lg:justify-start space-x-6 text-xs sm:text-sm text-muted-foreground">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                  <span>Available for projects</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Star className="w-4 h-4 text-yellow-500" fill="currentColor" />
+                  <span>5-star rated</span>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Enhanced Visual */}
           <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
             {/* Main Card */}
-            <div className="relative bg-card rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 border interactive-glow">
+            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl sm:rounded-[2rem] shadow-2xl p-6 sm:p-8 border border-white/20 interactive-glow hover:shadow-3xl transition-all duration-500">
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl sm:rounded-[2rem]"></div>
+              
               {/* Header */}
-              <div className="flex items-center justify-between mb-6 sm:mb-8">
+              <div className="relative flex items-center justify-between mb-6 sm:mb-8">
                 <div className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg interactive-scale">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale">
                     <span className="text-primary-foreground font-bold text-lg sm:text-2xl">JR</span>
                   </div>
                   <div className="min-w-0 flex-1">
                     <h3 className="text-lg sm:text-2xl font-bold text-card-foreground truncate">JR Solvy</h3>
-                    <p className="text-primary font-semibold text-sm sm:text-base">Digital Innovation Hub</p>
+                    <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold text-sm sm:text-base">Digital Innovation Hub</p>
                   </div>
                 </div>
-                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-primary rounded-full animate-pulse"></div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                  <span className="text-xs text-muted-foreground font-medium">Online</span>
+                </div>
               </div>
 
               {/* Services Preview */}
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-primary/10 rounded-lg sm:rounded-xl">
+              <div className="relative space-y-3 sm:space-y-4">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl sm:rounded-2xl border border-primary/10 hover:border-primary/20 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Web Development</span>
-                  <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                    <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
+                  </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-accent/20 rounded-lg sm:rounded-xl">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-accent/20 to-accent/10 rounded-xl sm:rounded-2xl border border-accent/20 hover:border-accent/30 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Mobile Apps</span>
-                  <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                    <span className="text-accent font-bold text-xs sm:text-sm">Available</span>
+                  </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-secondary/50 rounded-lg sm:rounded-xl">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-purple-500/10 to-purple-500/5 rounded-xl sm:rounded-2xl border border-purple-500/10 hover:border-purple-500/20 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Consulting</span>
-                  <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                    <span className="text-purple-600 font-bold text-xs sm:text-sm">Available</span>
+                  </div>
                 </div>
               </div>
 
               {/* Bottom Stats */}
-              <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border">
+              <div className="relative mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border/50">
                 <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-card-foreground">Pro</div>
+                    <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Pro</div>
                     <div className="text-xs sm:text-sm text-muted-foreground">Quality</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-card-foreground">24/7</div>
+                    <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">24/7</div>
                     <div className="text-xs sm:text-sm text-muted-foreground">Support</div>
                   </div>
                 </div>
@@ -122,9 +158,9 @@ const Hero = () => {
             </div>
             
             {/* Floating elements - Hidden on mobile for cleaner look */}
-            <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-8 h-8 sm:w-12 sm:h-12 bg-primary rounded-xl sm:rounded-2xl opacity-10 animate-pulse hidden sm:block"></div>
-            <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-6 h-6 sm:w-8 sm:h-8 bg-accent rounded-lg sm:rounded-xl opacity-20 animate-pulse hidden sm:block"></div>
-            <div className="absolute top-1/2 -right-2 sm:-right-4 w-4 h-4 sm:w-6 sm:h-6 bg-primary/30 rounded-full opacity-30 animate-bounce hidden lg:block"></div>
+            <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl opacity-20 animate-pulse hidden sm:block shadow-xl"></div>
+            <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-accent to-accent/80 rounded-xl sm:rounded-2xl opacity-30 animate-pulse hidden sm:block shadow-lg"></div>
+            <div className="absolute top-1/2 -right-2 sm:-right-4 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-br from-purple-500 to-purple-400 rounded-full opacity-40 animate-bounce hidden lg:block shadow-md"></div>
           </div>
         </div>
       </div>
