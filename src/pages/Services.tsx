@@ -1,6 +1,8 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Brain, Code, Smartphone, Palette, TrendingUp, Settings, Zap, Shield } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const Services = () => {
   const services = [
@@ -73,6 +75,12 @@ const Services = () => {
 
   return (
     <div className="pt-20">
+      <SEOHead
+        title="Digital Services | AI Solutions, Web Development & More"
+        description="Transform your business with our comprehensive digital services: AI solutions, web development, mobile apps, UI/UX design, digital marketing, and IT consulting."
+        keywords="AI solutions, web development, mobile app development, digital marketing, UI/UX design, IT consulting, automation, React, React Native"
+        url="https://jrsolvy.com/services"
+      />
       {/* Hero Section */}
       <section className="bg-indigo-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -235,18 +243,18 @@ const Services = () => {
               Let's discuss your project and how we can help you achieve your digital goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
               >
                 Get Free Consultation
-              </a>
-              <a
-                href="/projects"
+              </Link>
+              <Link
+                to="/projects"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-200"
               >
                 View Our Portfolio
-              </a>
+              </Link>
             </div>
           </div>
         </div>

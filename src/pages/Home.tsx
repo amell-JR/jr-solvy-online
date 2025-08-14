@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
 import { Link } from 'react-router-dom';
 import { Bot, Database, Globe, Shield, Smartphone, Cloud, CheckCircle, Users, Lightbulb, Award, Zap, Star, ArrowRight } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const Home = () => {
   const products = [
@@ -111,6 +112,12 @@ const Home = () => {
 
   return (
     <div>
+      <SEOHead
+        title="JR Solvy | AI Solutions & Digital Innovation"
+        description="Empowering Innovation. Accelerating Tomorrow. Intelligent digital tools that solve real problems for creators, learners, and businesses. Experience Ask JR, SmartSpend, Uyo SafeAlert, and more."
+        keywords="AI solutions, digital innovation, Ask JR, SmartSpend, Uyo SafeAlert, AI assistant, budget tracker, safety app, React, React Native, automation"
+        url="https://jrsolvy.com"
+      />
       <Hero />
       
       {/* Products Preview */}

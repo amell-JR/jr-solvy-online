@@ -1,6 +1,8 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ExternalLink, Github, Smartphone, Globe, Brain, Shield } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const Projects = () => {
   const projects = [
@@ -67,6 +69,12 @@ const Projects = () => {
 
   return (
     <div className="pt-20">
+      <SEOHead
+        title="Portfolio | AI-Powered Projects & Digital Solutions"
+        description="Explore our portfolio of innovative projects: IBIVoice AI assistant, Vibe Coding platform, Uyo SafeAlert app, and more cutting-edge digital solutions."
+        keywords="portfolio, AI projects, voice assistant, coding platform, safety app, React Native, AI/ML, mobile apps"
+        url="https://jrsolvy.com/projects"
+      />
       {/* Hero Section */}
       <section className="bg-indigo-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -221,18 +229,18 @@ const Projects = () => {
               Let's collaborate to bring your ideas to life with innovative solutions that make a difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 Start Your Project
-              </a>
-              <a
-                href="/services"
+              </Link>
+              <Link
+                to="/services"
                 className="border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition-all duration-200"
               >
                 View Our Services
-              </a>
+              </Link>
             </div>
           </div>
         </div>

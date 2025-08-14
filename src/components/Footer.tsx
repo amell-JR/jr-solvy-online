@@ -72,14 +72,18 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex justify-center sm:justify-start space-x-3 sm:space-x-4 mt-3 sm:mt-4">
               <a 
-                href="#" 
+                href="https://linkedin.com/in/robertsunday" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors focus-ring rounded p-1 touch-target"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
               <a 
-                href="#" 
+                href="https://twitter.com/jrsolvy" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors focus-ring rounded p-1 touch-target"
                 aria-label="Twitter"
               >

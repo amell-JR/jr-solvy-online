@@ -5,6 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -20,9 +21,10 @@ const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
+    <HelmetProvider>
+      <BrowserRouter>
+        <QueryClientProvider client={queryClient}>
+          <TooltipProvider>
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-grow">
@@ -41,9 +43,10 @@ const App = () => {
           </div>
           <Toaster />
           <Sonner />
-        </TooltipProvider>
-      </QueryClientProvider>
-    </BrowserRouter>
+          </TooltipProvider>
+        </QueryClientProvider>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

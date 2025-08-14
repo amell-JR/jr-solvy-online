@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
 import { Mail, Phone, Clock, Send, CheckCircle } from 'lucide-react';
+import ContactForm from '@/components/ContactForm';
+import SEOHead from '@/components/SEOHead';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +32,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@jrsolvy.com',
+      value: 'robertsunday333@gmail.com',
       description: 'Send us an email anytime',
       color: 'bg-indigo-600'
     },
@@ -84,6 +86,12 @@ const Contact = () => {
 
   return (
     <div className="pt-20">
+      <SEOHead
+        title="Contact Us | Get Your Free Consultation"
+        description="Ready to transform your business? Contact JR Solvy for AI solutions, web development, mobile apps, and digital marketing. Free consultation available."
+        keywords="contact, consultation, AI solutions, web development, mobile apps, digital marketing, project quote"
+        url="https://jrsolvy.com/contact"
+      />
       {/* Hero Section */}
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -140,84 +148,7 @@ const Contact = () => {
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                        Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                      Service Interested In
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200"
-                    >
-                      <option value="">Select a service</option>
-                      {services.map((service, index) => (
-                        <option key={index} value={service}>
-                          {service}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={6}
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors duration-200 resize-none"
-                      placeholder="Tell us about your project or question..."
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center space-x-2"
-                  >
-                    <Send size={20} />
-                    <span>Send Message</span>
-                  </button>
-                </form>
+                <ContactForm />
               </div>
             </div>
 
