@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 import { Send, User, Mail, MessageSquare } from 'lucide-react';
 
 const ContactForm = () => {
@@ -26,9 +27,17 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // For now, we'll simulate a successful submission
-      // In a real app, you'd integrate with a service like Formspree, Netlify Forms, or EmailJS
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
       
       toast({
         title: "Message sent successfully!",
@@ -37,6 +46,7 @@ const ContactForm = () => {
       
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('Error sending contact email:', error);
       toast({
         title: "Error sending message",
         description: "Please try again later or contact us directly.",
