@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Newsletter from '../components/Newsletter';
 import { Link } from 'react-router-dom';
 import SEOHead from '@/components/SEOHead';
 
@@ -42,7 +41,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Newsletter />
+      
     </div>
   );
 };
