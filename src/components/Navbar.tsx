@@ -36,9 +36,12 @@ const Navbar = () => {
               to="/" 
               className="flex items-center space-x-2 sm:space-x-3 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/5 transition-all duration-300 group"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center interactive-scale shadow-lg group-hover:shadow-xl transition-all duration-300">
-                <span className="text-primary-foreground font-bold text-sm sm:text-base">JR</span>
-                <Sparkles className="absolute w-3 h-3 text-primary-foreground/50 animate-pulse" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 interactive-scale group-hover:scale-110 transition-all duration-300">
+                <img 
+                  src="/lovable-uploads/6bdd4666-a527-44ac-8f15-1b66f6b251c7.png" 
+                  alt="JR Solvy Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">JR Solvy</span>
