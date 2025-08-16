@@ -18,8 +18,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start space-x-3">
-              <div className="w-10 h-10 glass rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-primary-foreground font-bold text-lg gradient-text">JR</span>
+              <div className="w-10 h-10 glass rounded-xl flex items-center justify-center shadow-lg p-1">
+                <img 
+                  src="/lovable-uploads/6bdd4666-a527-44ac-8f15-1b66f6b251c7.png" 
+                  alt="JR Solvy Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-primary-foreground">JR Solvy</span>
