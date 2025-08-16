@@ -8,27 +8,43 @@ const Services = () => {
   const services = [
     {
       icon: Brain,
-      title: 'AI Solutions & Automation',
-      description: 'Custom AI tools and automation systems to streamline your business processes.',
-      features: ['Custom Development', 'Process Automation', 'System Integration'],
+      title: 'AI Solutions',
+      description: 'AI-powered personal & business tools, chatbots, automation & assistants, smart applications tailored to your needs.',
+      features: ['AI-powered tools', 'Chatbots & automation', 'Smart assistants'],
       color: 'bg-gradient-to-br from-purple-600 to-purple-500',
       accent: 'text-purple-600'
     },
     {
       icon: Code,
-      title: 'Web Development',
-      description: 'Modern, responsive websites and web applications built with cutting-edge technologies.',
-      features: ['Responsive Design', 'Web Applications', 'CMS Development'],
+      title: 'Web & App Development',
+      description: 'Beautiful, functional websites, mobile & web apps that solve real problems, e-commerce platforms & integrations.',
+      features: ['Responsive websites', 'Mobile & web apps', 'E-commerce platforms'],
       color: 'bg-gradient-to-br from-indigo-600 to-indigo-500',
       accent: 'text-indigo-600'
     },
     {
-      icon: Smartphone,
-      title: 'Mobile App Development',
-      description: 'Native and cross-platform mobile applications for iOS and Android platforms.',
-      features: ['iOS Development', 'Android Development', 'Cross-platform Apps'],
+      icon: Palette,
+      title: 'Creative & Branding',
+      description: 'Graphic design, logos & brand identity, social media content & digital campaigns, video editing & storytelling.',
+      features: ['Graphic design & logos', 'Social media content', 'Video editing'],
       color: 'bg-gradient-to-br from-sky-500 to-sky-400',
       accent: 'text-sky-500'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Training & Education',
+      description: 'Computer science & cybersecurity tutoring, digital skills workshops, AI, coding & tech literacy for beginners.',
+      features: ['CS & cybersecurity tutoring', 'Digital skills workshops', 'Tech literacy training'],
+      color: 'bg-gradient-to-br from-emerald-600 to-emerald-500',
+      accent: 'text-emerald-600'
+    },
+    {
+      icon: Settings,
+      title: 'IT Services & Consulting',
+      description: 'Tech support & troubleshooting, cloud, hosting & integrations, business IT consulting.',
+      features: ['Tech support', 'Cloud & hosting', 'Business IT consulting'],
+      color: 'bg-gradient-to-br from-orange-600 to-orange-500',
+      accent: 'text-orange-600'
     }
   ];
 
@@ -95,7 +111,7 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -189,8 +205,8 @@ const Services = () => {
                     <Shield className="text-white" size={16} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Proven Expertise</h3>
-                    <p className="text-muted-foreground leading-relaxed">Years of experience delivering successful projects across various industries.</p>
+                    <h3 className="font-bold text-foreground mb-2 text-lg">People-First Approach</h3>
+                    <p className="text-muted-foreground leading-relaxed">We care about your growth and put your needs at the center of everything we do.</p>
                   </div>
                 </div>
                 
@@ -199,8 +215,8 @@ const Services = () => {
                     <Zap className="text-white" size={16} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Cutting-Edge Technology</h3>
-                    <p className="text-muted-foreground leading-relaxed">We stay ahead of the curve with the latest technologies and best practices.</p>
+                    <h3 className="font-bold text-foreground mb-2 text-lg">Affordable & Accessible</h3>
+                    <p className="text-muted-foreground leading-relaxed">Quality solutions for everyone, regardless of budget or technical expertise.</p>
                   </div>
                 </div>
                 
@@ -209,8 +225,8 @@ const Services = () => {
                     <TrendingUp className="text-white" size={16} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Results-Driven Approach</h3>
-                    <p className="text-muted-foreground leading-relaxed">We focus on delivering measurable results that drive real business value.</p>
+                    <h3 className="font-bold text-foreground mb-2 text-lg">Innovation with Heart</h3>
+                    <p className="text-muted-foreground leading-relaxed">Not just tech, but solutions that connect and empower communities.</p>
                   </div>
                 </div>
                 
@@ -219,8 +235,8 @@ const Services = () => {
                     <Settings className="text-white" size={16} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Ongoing Support</h3>
-                    <p className="text-muted-foreground leading-relaxed">Comprehensive support and maintenance to ensure your continued success.</p>
+                    <h3 className="font-bold text-foreground mb-2 text-lg">Trust & Reliability</h3>
+                    <p className="text-muted-foreground leading-relaxed">We deliver what we promise and build lasting partnerships with our clients.</p>
                   </div>
                 </div>
               </div>
@@ -265,24 +281,24 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              Ready to Get Started?
+              Ready to take the next step?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8 font-medium">
-              Let's discuss your project and how we can help you achieve your digital goals.
+              Let's create something amazing together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center justify-center space-x-2 group"
               >
-                <span>Get Free Consultation</span>
+                <span>Contact Us</span>
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
               <Link
                 to="/projects"
                 className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                View Our Portfolio
+                Start Your Project
               </Link>
             </div>
           </div>

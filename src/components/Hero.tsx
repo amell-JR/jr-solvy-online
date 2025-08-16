@@ -21,17 +21,17 @@ const Hero = () => {
             {/* Brand Badge */}
             <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground rounded-full text-xs sm:text-sm font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <Star className="w-3 h-3 sm:w-4 sm:h-4 mr-2 sm:mr-3 animate-spin" fill="currentColor" />
-              Award-Winning Digital Solutions
+              Smart Digital Solutions
             </div>
             
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-responsive-3xl font-bold text-foreground leading-tight">
-                Building AI-Powered
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent block">Solutions for the Future</span>
+                Smart Digital Solutions,
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent block">Rooted in Innovation</span>
               </h1>
               
               <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
-                JR Solvy creates intelligent software tools that help people and businesses achieve more — through automation, data, and creativity.
+                At JRsolvy, we simplify technology for individuals, businesses, and communities. From AI-powered tools to creative digital services, we're here to help you grow, connect, and succeed.
               </p>
             </div>
 
@@ -41,38 +41,38 @@ const Hero = () => {
                 <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
                   <CheckCircle className="text-primary" size={16} />
                 </div>
-                <span className="text-foreground font-semibold text-sm">Professional</span>
+                <span className="text-foreground font-semibold text-sm">People-First</span>
               </div>
               <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
                 <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center">
                   <Zap className="text-accent" size={16} />
                 </div>
-                <span className="text-foreground font-semibold text-sm">Modern Tech</span>
+                <span className="text-foreground font-semibold text-sm">Accessible</span>
               </div>
               <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
                 <div className="w-8 h-8 bg-emerald-500/10 rounded-lg flex items-center justify-center">
                   <Award className="text-emerald-500" size={16} />
                 </div>
-                <span className="text-foreground font-semibold text-sm">Quality First</span>
+                <span className="text-foreground font-semibold text-sm">Innovation</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center lg:justify-start">
               <Link
-                to="/services"
+                to="/contact"
                 className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground btn-responsive rounded-2xl font-bold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target group"
               >
-                <span>View Services</span>
+                <span>Let's Build Together</span>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
               
               <Link
-                to="/contact"
+                to="/services"
                 className="bg-white/80 backdrop-blur-sm border-2 border-primary/20 text-primary btn-responsive rounded-2xl font-bold hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center shadow-lg hover:shadow-xl focus-ring touch-target group"
               >
                 <span className="flex items-center justify-center space-x-2">
-                  <span>Contact Us</span>
+                  <span>View Services</span>
                   <Play size={14} className="group-hover:scale-110 transition-transform duration-300" />
                 </span>
               </Link>

@@ -7,23 +7,23 @@ const About = () => {
   const values = [
     {
       icon: Brain,
-      title: 'Innovation',
-      description: 'We use cutting-edge technologies to create modern digital solutions.'
+      title: 'People-First Approach',
+      description: 'We care about your growth and success above all else.'
     },
     {
       icon: Users,
-      title: 'Client Focus',
-      description: 'Every project is designed with the client\'s goals and needs in mind.'
+      title: 'Affordable & Accessible',
+      description: 'Quality solutions for everyone, regardless of budget or technical knowledge.'
     },
     {
       icon: Award,
-      title: 'Quality',
-      description: 'We deliver high-quality solutions on time and within budget.'
+      title: 'Innovation with Heart',
+      description: 'Not just tech, but solutions that connect and empower communities.'
     },
     {
       icon: Target,
-      title: 'Results',
-      description: 'We focus on measurable outcomes that drive real value.'
+      title: 'Trust & Reliability',
+      description: 'We deliver what we promise, building lasting relationships.'
     }
   ];
 
@@ -62,9 +62,9 @@ const About = () => {
       <section className="bg-background section-padding">
         <div className="container-responsive">
           <div className="text-center mb-12 lg:mb-16">
-            <h1 className="text-responsive-3xl font-bold text-foreground mb-4 lg:mb-6">About JR Solvy</h1>
+            <h1 className="text-responsive-3xl font-bold text-foreground mb-4 lg:mb-6">About JRsolvy</h1>
             <p className="text-responsive-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We believe that the future belongs to those who leverage AI, automation, and smart systems to solve real-world problems.
+              At JRsolvy, we believe technology should empower, not confuse. Our mission is to create accessible, affordable, and impactful digital solutions tailored to real-world needs.
             </p>
           </div>
         </div>
@@ -205,29 +205,17 @@ const About = () => {
         <div className="container-responsive">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <div>
-              <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6">Our Vision</h2>
+              <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6">Our Mission</h2>
               <p className="text-responsive-base text-muted-foreground leading-relaxed mb-6">
-                At JR Solvy, we believe that the future belongs to those who leverage AI, automation, and smart systems to solve real-world problems. We're on a mission to simplify innovation and bring cutting-edge solutions to everyday users — from students to enterprises.
+                We exist to solve everyday tech challenges with simple yet powerful tools, empower communities with education, creativity, and innovation, and build trust by delivering solutions that work, not just promises. We're not just a company — we're your partner in growth.
               </p>
               
-              <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6 mt-8">What We Do</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-card p-4 rounded-lg border">
-                  <h3 className="font-semibold text-card-foreground mb-2">AI Applications</h3>
-                  <p className="text-sm text-muted-foreground">Intelligent tools for education, productivity, and decision-making</p>
-                </div>
-                <div className="bg-card p-4 rounded-lg border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Tech Consulting</h3>
-                  <p className="text-sm text-muted-foreground">Strategy & implementation for startups and businesses</p>
-                </div>
-                <div className="bg-card p-4 rounded-lg border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Custom Software</h3>
-                  <p className="text-sm text-muted-foreground">We build what you imagine</p>
-                </div>
-                <div className="bg-card p-4 rounded-lg border">
-                  <h3 className="font-semibold text-card-foreground mb-2">Digital Services</h3>
-                  <p className="text-sm text-muted-foreground">Automation, data analytics, and cloud integration</p>
-                </div>
+              <h2 className="text-responsive-2xl font-bold text-foreground mb-4 lg:mb-6 mt-8">Our Promise</h2>
+              <div className="bg-card p-6 rounded-xl border mb-6">
+                <p className="text-lg text-card-foreground font-medium text-center leading-relaxed">
+                  At JRsolvy, we're building more than solutions.<br />
+                  We're building <span className="text-primary font-bold">trust, empowerment, and community through technology.</span>
+                </p>
               </div>
             </div>
             
