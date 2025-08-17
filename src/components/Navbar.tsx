@@ -38,7 +38,7 @@ const Navbar = () => {
             >
               <div className="w-8 h-8 sm:w-10 sm:h-10 interactive-scale group-hover:scale-110 transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/6bdd4666-a527-44ac-8f15-1b66f6b251c7.png" 
+                  src="/my logo.svg" 
                   alt="JR Solvy Logo" 
                   className="w-full h-full object-contain"
                 />

@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="flex items-center justify-center sm:justify-start space-x-3">
               <div className="w-10 h-10 glass rounded-xl flex items-center justify-center shadow-lg p-1">
                 <img 
-                  src="/lovable-uploads/6bdd4666-a527-44ac-8f15-1b66f6b251c7.png" 
+                  src="/my logo.svg" 
                   alt="JR Solvy Logo" 
                   className="w-full h-full object-contain"
                 />

@@ -105,7 +105,7 @@ const Hero = () => {
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-2">
                     <img 
-                      src="/lovable-uploads/6bdd4666-a527-44ac-8f15-1b66f6b251c7.png" 
+                      src="/my logo.svg" 
                       alt="JR Solvy Logo" 
                       className="w-full h-full object-contain"
                     />
