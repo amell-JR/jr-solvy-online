@@ -36,7 +36,7 @@ const Navbar = () => {
               to="/" 
               className="flex items-center space-x-2 sm:space-x-3 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/5 transition-all duration-300 group"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 interactive-scale group-hover:scale-110 transition-all duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 interactive-scale group-hover:scale-110 transition-all duration-300">
                 <img 
                   src="/my logo.svg" 
                   alt="JR Solvy Logo" 
