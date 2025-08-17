@@ -294,6 +294,15 @@ All colors MUST be HSL.
     @apply bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-6 hover:shadow-2xl transition-all duration-500 hover:scale-[1.02];
   }
 
+  /* Logo theming */
+  .logo-themed {
+    transition: filter 0.3s ease;
+  }
+
+  .dark .logo-themed {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+  }
+
   /* Gradient backgrounds */
   .bg-gradient-primary {
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary) / 0.8) 100%);
