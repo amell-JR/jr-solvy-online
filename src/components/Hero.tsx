@@ -103,7 +103,7 @@ const Hero = () => {
               {/* Header */}
               <div className="relative flex items-center justify-between mb-6 sm:mb-8">
                 <div className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-2 sm:p-3">
+                  <div className="w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-3 sm:p-4">
                     <img 
                       src="/my logo.svg" 
                       alt="JR Solvy Logo" 
