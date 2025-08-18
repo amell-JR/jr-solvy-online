@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Award, Users, Zap, Play, Star } from 'lucide-react';
@@ -103,7 +102,7 @@ const Hero = () => {
               {/* Header */}
               <div className="relative flex items-center justify-between mb-6 sm:mb-8">
                 <div className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-4 sm:p-6">
+                  <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
                     <img 
                       src="/my logo.svg" 
                       alt="JR Solvy Logo" 
@@ -113,9 +112,9 @@ const Hero = () => {
                       }}
                     />
                   </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-lg sm:text-2xl font-bold text-card-foreground truncate">JR Solvy</h3>
-                    <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold text-sm sm:text-base">Digital Innovation Hub</p>
+                  <div className="min-w-0 flex-1 overflow-hidden">
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-card-foreground truncate">JR Solvy</h3>
+                    <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">Digital Innovation Hub</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">

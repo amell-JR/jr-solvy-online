@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start space-x-3">
-              <div className="w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 glass rounded-xl flex items-center justify-center shadow-lg p-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 glass rounded-xl flex items-center justify-center shadow-lg p-3 sm:p-4 flex-shrink-0">
                 <img 
                   src="/my logo.svg" 
                   alt="JR Solvy Logo" 
@@ -28,9 +28,9 @@ const Footer = () => {
                   }}
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-primary-foreground">JR Solvy</span>
-                <span className="text-sm text-primary-foreground/80 font-medium">Digital Innovation</span>
+              <div className="flex flex-col min-w-0">
+                <span className="text-lg sm:text-xl md:text-2xl font-bold text-primary-foreground whitespace-nowrap">JR Solvy</span>
+                <span className="text-sm sm:text-base text-primary-foreground/80 font-medium whitespace-nowrap">Digital Innovation</span>
               </div>
             </div>
             <p className="text-primary-foreground/85 text-sm leading-relaxed max-w-sm mx-auto sm:mx-0 font-medium">

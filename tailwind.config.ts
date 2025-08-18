@@ -37,6 +37,11 @@ export default {
 			'2xl': '1536px',
 		},
 		extend: {
+			aspectRatio: {
+				'4/3': '4 / 3',
+				'3/2': '3 / 2',
+				'5/4': '5 / 4',
+			},
 			fontFamily: {
 				sans: [
 					'Inter',
@@ -70,6 +75,13 @@ export default {
 				'18': '4.5rem',
 				'88': '22rem',
 				'128': '32rem',
+				'safe-top': 'env(safe-area-inset-top)',
+				'safe-bottom': 'env(safe-area-inset-bottom)',
+				'safe-left': 'env(safe-area-inset-left)',
+				'safe-right': 'env(safe-area-inset-right)',
+			},
+			minHeight: {
+				'touch': '44px',
 			},
 			colors: {
 				border: 'hsl(var(--border))',

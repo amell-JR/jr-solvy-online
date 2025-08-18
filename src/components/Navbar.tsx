@@ -34,21 +34,21 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link 
               to="/" 
-              className="flex items-center space-x-2 sm:space-x-3 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/5 transition-all duration-300 group"
+              className="flex items-center space-x-3 sm:space-x-4 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/5 transition-all duration-300 group"
             >
-              <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 interactive-scale group-hover:scale-110 transition-all duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 interactive-scale group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                 <img 
                   src="/my logo.svg" 
                   alt="JR Solvy Logo" 
-                  className="w-full h-full object-cover logo-themed"
+                  className="w-full h-full object-contain logo-themed"
                   style={{
                     filter: 'brightness(0) saturate(100%) invert(39%) sepia(74%) saturate(1729%) hue-rotate(204deg) brightness(98%) contrast(91%)'
                   }}
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">JR Solvy</span>
-                <span className="text-xs text-muted-foreground font-medium hidden sm:block">Digital Innovation</span>
+              <div className="flex flex-col min-w-0">
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent whitespace-nowrap">JR Solvy</span>
+                <span className="text-xs sm:text-sm text-muted-foreground font-medium hidden sm:block whitespace-nowrap">Digital Innovation</span>
               </div>
             </Link>
           </div>
