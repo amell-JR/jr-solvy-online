@@ -1,51 +1,98 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, Code, Smartphone, Palette, TrendingUp, Settings, Zap, Shield, Star, ArrowRight } from 'lucide-react';
+import { 
+  Brain, Code, Smartphone, Palette, TrendingUp, Settings, Zap, Shield, Star, ArrowRight,
+  Globe, Search, Share2, Mail, Camera, Video, Database, Users, 
+  Monitor, Cloud, Lock, BookOpen, Award, Briefcase, BarChart3, Heart,
+  PenTool, Music, Dumbbell, Target
+} from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 
 const Services = () => {
-  const services = [
+  const serviceCategories = [
     {
-      icon: Brain,
-      title: 'AI Solutions',
-      description: 'AI-powered personal & business tools, chatbots, automation & assistants, smart applications tailored to your needs.',
-      features: ['AI-powered tools', 'Chatbots & automation', 'Smart assistants'],
-      color: 'bg-gradient-to-br from-purple-600 to-purple-500',
-      accent: 'text-purple-600'
+      category: "Digital & Online Services",
+      icon: Globe,
+      description: "Build a strong online presence with modern tools and creative solutions",
+      color: 'bg-gradient-to-br from-blue-600 to-blue-500',
+      accent: 'text-blue-600',
+      services: [
+        { name: 'Web Design & Development', desc: 'Fast, responsive, and user-friendly websites' },
+        { name: 'Mobile App Development', desc: 'Cross-platform apps for Android & iOS' },
+        { name: 'SEO (Search Engine Optimization)', desc: 'Rank higher and get found online' },
+        { name: 'Social Media Management & Marketing', desc: 'Grow your brand on Facebook, Instagram, LinkedIn & more' },
+        { name: 'Email Marketing', desc: 'Campaigns using Brevo, Mailchimp, or Resend' },
+        { name: 'Graphic Design', desc: 'Logos, flyers, business cards, and branding' },
+        { name: 'Content Writing & Blogging', desc: 'Engaging content to attract your audience' },
+        { name: 'Video Editing & Animation', desc: 'Creative visuals for ads, reels, and promotions' },
+        { name: 'Data Analysis & Visualization', desc: 'Transform data into actionable insights' },
+        { name: 'Virtual Assistance', desc: 'Reliable online support for your daily tasks' }
+      ]
     },
     {
-      icon: Code,
-      title: 'Web & App Development',
-      description: 'Beautiful, functional websites, mobile & web apps that solve real problems, e-commerce platforms & integrations.',
-      features: ['Responsive websites', 'Mobile & web apps', 'E-commerce platforms'],
-      color: 'bg-gradient-to-br from-indigo-600 to-indigo-500',
-      accent: 'text-indigo-600'
-    },
-    {
-      icon: Palette,
-      title: 'Creative & Branding',
-      description: 'Graphic design, logos & brand identity, social media content & digital campaigns, video editing & storytelling.',
-      features: ['Graphic design & logos', 'Social media content', 'Video editing'],
-      color: 'bg-gradient-to-br from-sky-500 to-sky-400',
-      accent: 'text-sky-500'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Training & Education',
-      description: 'Computer science & cybersecurity tutoring, digital skills workshops, AI, coding & tech literacy for beginners.',
-      features: ['CS & cybersecurity tutoring', 'Digital skills workshops', 'Tech literacy training'],
-      color: 'bg-gradient-to-br from-emerald-600 to-emerald-500',
-      accent: 'text-emerald-600'
-    },
-    {
+      category: "Tech & Software Services",
       icon: Settings,
-      title: 'IT Services & Consulting',
-      description: 'Tech support & troubleshooting, cloud, hosting & integrations, business IT consulting.',
-      features: ['Tech support', 'Cloud & hosting', 'Business IT consulting'],
+      description: "Stay ahead with cutting-edge technology solutions",
+      color: 'bg-gradient-to-br from-purple-600 to-purple-500',
+      accent: 'text-purple-600',
+      services: [
+        { name: 'IT Support & Troubleshooting', desc: 'Fast help when tech issues strike' },
+        { name: 'Software Engineering & Automation', desc: 'Custom tools to save time & money' },
+        { name: 'AI Chatbot Development', desc: 'Smart bots to enhance customer experience' },
+        { name: 'Cloud Services', desc: 'AWS, Azure, Supabase, Vercel, and more' },
+        { name: 'Cybersecurity Audits', desc: 'Protect your business from threats' },
+        { name: 'Database Management', desc: 'Secure, scalable, and optimized systems' }
+      ]
+    },
+    {
+      category: "Education & Training",
+      icon: BookOpen,
+      description: "Knowledge-sharing to empower the next generation",
+      color: 'bg-gradient-to-br from-emerald-600 to-emerald-500',
+      accent: 'text-emerald-600',
+      services: [
+        { name: 'Private Tutoring', desc: 'Mathematics, Physics, Programming, and more' },
+        { name: 'Online Courses Creation', desc: 'Custom e-learning solutions' },
+        { name: 'Exam Preparation Coaching', desc: 'Excel in your academics with guided training' },
+        { name: 'Language Teaching', desc: 'English, Ibibio, and more' },
+        { name: 'Workshops & Training', desc: 'Practical sessions for tech and skills growth' }
+      ]
+    },
+    {
+      category: "Business & Professional Services",
+      icon: Briefcase,
+      description: "Helping individuals and organizations thrive",
       color: 'bg-gradient-to-br from-orange-600 to-orange-500',
-      accent: 'text-orange-600'
+      accent: 'text-orange-600',
+      services: [
+        { name: 'Business Consulting & Strategy', desc: 'Turn ideas into profitable ventures' },
+        { name: 'Project Management', desc: 'Organize and deliver results on time' },
+        { name: 'Resume & CV Writing', desc: 'Land your dream job with a professional CV' },
+        { name: 'Market Research', desc: 'Understand trends, customers, and opportunities' },
+        { name: 'Branding & Positioning', desc: 'Stand out from the competition' }
+      ]
+    },
+    {
+      category: "Creative & Personal Services",
+      icon: Heart,
+      description: "Bringing your ideas and passions to life",
+      color: 'bg-gradient-to-br from-pink-600 to-pink-500',
+      accent: 'text-pink-600',
+      services: [
+        { name: 'Photography & Videography', desc: 'Capture moments that matter' },
+        { name: 'Music Production & Voice-Over', desc: 'Professional sound for your projects' },
+        { name: 'Fitness & Health Coaching', desc: 'Achieve your personal wellness goals' },
+        { name: 'Life Coaching & Mentorship', desc: 'Guidance for career, business, and personal growth' }
+      ]
     }
+  ];
+
+  const whyChooseUs = [
+    { text: 'Professional & reliable services', icon: Shield },
+    { text: 'Tailored solutions for your needs', icon: Target },
+    { text: 'Affordable & flexible packages', icon: Heart },
+    { text: 'Dedicated support every step of the way', icon: Users }
   ];
 
   const process = [
@@ -108,46 +155,47 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Service Categories */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/20 hover:border-primary/20 group hover:scale-[1.02]"
-              >
-                <div className={`h-1 ${service.color}`}></div>
-                <div className="p-6 sm:p-8">
-                  <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <service.icon className="text-white" size={28} />
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Our <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Services</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium">
+              Top-notch digital, tech, educational, and professional solutions designed to help you achieve your goals
+            </p>
+          </div>
+
+          <div className="space-y-16">
+            {serviceCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className="bg-gradient-to-br from-muted/20 to-background rounded-3xl p-8 border border-border/30">
+                {/* Category Header */}
+                <div className="flex items-center mb-8">
+                  <div className={`w-16 h-16 ${category.color} rounded-2xl flex items-center justify-center mr-6 shadow-lg`}>
+                    <category.icon className="text-white" size={28} />
                   </div>
-                  
-                  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  
-                  <ul className="space-y-3">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center space-x-3">
-                        <div className="w-6 h-6 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Zap className={service.accent} size={12} />
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">{category.category}</h3>
+                    <p className="text-muted-foreground font-medium">{category.description}</p>
+                  </div>
+                </div>
+
+                {/* Services Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {category.services.map((service, serviceIndex) => (
+                    <div key={serviceIndex} className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/40 hover:border-primary/20 group hover:scale-[1.02]">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                          <Zap className={category.accent} size={14} />
                         </div>
-                        <span className="text-foreground text-sm font-medium">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <div className="mt-6 pt-6 border-t border-border/50">
-                    <button className="flex items-center space-x-2 text-primary font-semibold hover:text-primary/80 transition-colors duration-300 group/btn">
-                      <span>Learn More</span>
-                      <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform duration-300" />
-                    </button>
-                  </div>
+                        <div className="flex-1">
+                          <h4 className="font-bold text-foreground mb-2 text-lg">{service.name}</h4>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
@@ -200,45 +248,24 @@ const Services = () => {
                 Why Choose <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">JR Solvy?</span>
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-indigo-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Shield className="text-white" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">People-First Approach</h3>
-                    <p className="text-muted-foreground leading-relaxed">We care about your growth and put your needs at the center of everything we do.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-sky-400 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Zap className="text-white" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Affordable & Accessible</h3>
-                    <p className="text-muted-foreground leading-relaxed">Quality solutions for everyone, regardless of budget or technical expertise.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-purple-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <TrendingUp className="text-white" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Innovation with Heart</h3>
-                    <p className="text-muted-foreground leading-relaxed">Not just tech, but solutions that connect and empower communities.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-600 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Settings className="text-white" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2 text-lg">Trust & Reliability</h3>
-                    <p className="text-muted-foreground leading-relaxed">We deliver what we promise and build lasting partnerships with our clients.</p>
-                  </div>
-                </div>
+                {whyChooseUs.map((reason, index) => {
+                  const colors = [
+                    'bg-gradient-to-br from-indigo-600 to-indigo-500',
+                    'bg-gradient-to-br from-sky-500 to-sky-400', 
+                    'bg-gradient-to-br from-purple-600 to-purple-500',
+                    'bg-gradient-to-br from-emerald-600 to-emerald-500'
+                  ];
+                  return (
+                    <div key={index} className="flex items-start space-x-4 group">
+                      <div className={`w-12 h-12 ${colors[index]} rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                        <reason.icon className="text-white" size={16} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-foreground mb-2 text-lg">{reason.text}</h3>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
             
