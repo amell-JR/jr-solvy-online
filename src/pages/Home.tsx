@@ -34,10 +34,7 @@ const Home = () => {
                 to="/services"
                 className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl focus-ring"
               >
-                Start Your Project
-              </Link>
-            </div>
-          </div>
+                View Services
         </div>
       </section>
 

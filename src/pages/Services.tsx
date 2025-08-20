@@ -517,7 +517,7 @@ const Services = () => {
                 to="/projects"
                 className="border-2 border-white text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Start Your Project
+                View Services
               </Link>
             </div>
           </div>
