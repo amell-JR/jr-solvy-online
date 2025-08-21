@@ -126,28 +126,28 @@ const Hero = () => {
 
               {/* Services Preview */}
               <div className="relative space-y-3 sm:space-y-4">
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-primary/8 to-primary/4 rounded-xl sm:rounded-2xl border border-primary/15 hover:border-primary/25 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl sm:rounded-2xl border border-primary/10 hover:border-primary/20 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Web Development</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                     <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-accent/15 to-accent/8 rounded-xl sm:rounded-2xl border border-accent/20 hover:border-accent/30 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-accent/20 to-accent/10 rounded-xl sm:rounded-2xl border border-accent/20 hover:border-accent/30 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Mobile Apps</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                     <span className="text-accent font-bold text-xs sm:text-sm">Available</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-orange-500/8 to-orange-500/4 rounded-xl sm:rounded-2xl border border-orange-500/15 hover:border-orange-500/25 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-orange-500/10 to-orange-500/5 rounded-xl sm:rounded-2xl border border-orange-500/10 hover:border-orange-500/20 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Tutoring</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                     <span className="text-orange-600 font-bold text-xs sm:text-sm">Available</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-purple-500/8 to-purple-500/4 rounded-xl sm:rounded-2xl border border-purple-500/15 hover:border-purple-500/25 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-purple-500/10 to-purple-500/5 rounded-xl sm:rounded-2xl border border-purple-500/10 hover:border-purple-500/20 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Consulting</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
@@ -183,3 +183,5 @@ const Hero = () => {
 };
 
 export default Hero;
+  )
+}
