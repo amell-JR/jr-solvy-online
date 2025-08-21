@@ -5,12 +5,12 @@ import { Mail, Linkedin, Twitter, Sparkles, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-primary text-primary-foreground relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-slate-800 to-slate-900 text-primary-foreground relative overflow-hidden">
       {/* Enhanced Background Pattern */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-white/30 to-transparent rounded-full -translate-x-48 -translate-y-48 blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-accent/30 to-transparent rounded-full translate-x-48 translate-y-48 blur-3xl animate-pulse-slow"></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-white/10 to-accent/10 rounded-full -translate-x-32 -translate-y-32 blur-2xl"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-white/20 to-transparent rounded-full -translate-x-48 -translate-y-48 blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-accent/20 to-transparent rounded-full translate-x-48 translate-y-48 blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-white/8 to-accent/8 rounded-full -translate-x-32 -translate-y-32 blur-2xl"></div>
       </div>
       
       <div className="container-responsive py-8 sm:py-12">

@@ -27,13 +27,13 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white/80 backdrop-blur-xl border-b border-white/20 sticky top-0 z-50 transition-all duration-300 shadow-sm">
+    <nav className="bg-white/70 backdrop-blur-lg border-b border-white/30 sticky top-0 z-50 transition-all duration-300 shadow-sm">
       <div className="container-responsive">
         <div className="flex justify-between items-center h-14 sm:h-16">
           <div className="flex items-center">
             <Link 
               to="/" 
-              className="flex items-center space-x-3 sm:space-x-4 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/5 transition-all duration-300 group"
+              className="flex items-center space-x-3 sm:space-x-4 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/8 transition-all duration-300 group"
             >
               <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 interactive-scale group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                 <img 

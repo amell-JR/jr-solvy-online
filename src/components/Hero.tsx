@@ -5,12 +5,12 @@ import { ArrowRight, CheckCircle, Award, Users, Zap, Play, Star } from 'lucide-r
 const Hero = () => {
 
   return (
-    <section className="bg-gradient-to-br from-background via-primary/5 to-accent/10 section-padding relative overflow-hidden">
+    <section className="bg-gradient-to-br from-slate-50 via-slate-100 to-slate-50 section-padding relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/3 to-accent/3 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container-responsive relative">
@@ -37,19 +37,19 @@ const Hero = () => {
             {/* Key Benefits */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
               <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-                <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-primary/15 rounded-lg flex items-center justify-center">
                   <CheckCircle className="text-primary" size={16} />
                 </div>
                 <span className="text-foreground font-semibold text-sm">People-First</span>
               </div>
               <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-                <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-accent/15 rounded-lg flex items-center justify-center">
                   <Zap className="text-accent" size={16} />
                 </div>
                 <span className="text-foreground font-semibold text-sm">Accessible</span>
               </div>
               <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-                <div className="w-8 h-8 bg-emerald-500/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-emerald-500/15 rounded-lg flex items-center justify-center">
                   <Award className="text-emerald-500" size={16} />
                 </div>
                 <span className="text-foreground font-semibold text-sm">Innovation</span>
@@ -95,14 +95,15 @@ const Hero = () => {
           {/* Enhanced Visual */}
           <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
             {/* Main Card */}
-            <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl sm:rounded-[2rem] shadow-2xl p-6 sm:p-8 border border-white/20 interactive-glow hover:shadow-3xl transition-all duration-500">
+            <div className="relative bg-white/70 backdrop-blur-lg rounded-2xl sm:rounded-3xl shadow-lg p-6 sm:p-8 border border-white/30 hover:shadow-xl transition-all duration-300">
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl sm:rounded-[2rem]"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-accent/3 rounded-2xl sm:rounded-3xl"></div>
               
               {/* Header */}
               <div className="relative flex items-center justify-between mb-6 sm:mb-8">
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
+                  <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40 bg-gradient-to-br from-primary to-primary/90 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-lg p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
                     <img 
                       src="/my logo.svg" 
                       alt="JR Solvy Logo" 
@@ -125,28 +126,28 @@ const Hero = () => {
 
               {/* Services Preview */}
               <div className="relative space-y-3 sm:space-y-4">
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl sm:rounded-2xl border border-primary/10 hover:border-primary/20 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-primary/8 to-primary/4 rounded-xl sm:rounded-2xl border border-primary/15 hover:border-primary/25 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Web Development</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                     <span className="text-primary font-bold text-xs sm:text-sm">Available</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-accent/20 to-accent/10 rounded-xl sm:rounded-2xl border border-accent/20 hover:border-accent/30 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-accent/15 to-accent/8 rounded-xl sm:rounded-2xl border border-accent/20 hover:border-accent/30 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Mobile Apps</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                     <span className="text-accent font-bold text-xs sm:text-sm">Available</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-orange-500/10 to-orange-500/5 rounded-xl sm:rounded-2xl border border-orange-500/10 hover:border-orange-500/20 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-orange-500/8 to-orange-500/4 rounded-xl sm:rounded-2xl border border-orange-500/15 hover:border-orange-500/25 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Tutoring</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                     <span className="text-orange-600 font-bold text-xs sm:text-sm">Available</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-purple-500/10 to-purple-500/5 rounded-xl sm:rounded-2xl border border-purple-500/10 hover:border-purple-500/20 transition-all duration-300 group">
+                <div className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-purple-500/8 to-purple-500/4 rounded-xl sm:rounded-2xl border border-purple-500/15 hover:border-purple-500/25 transition-all duration-300 group">
                   <span className="text-card-foreground font-medium text-sm sm:text-base">Consulting</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
