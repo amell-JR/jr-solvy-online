@@ -45,14 +45,3 @@ const Home = () => {
 };
 
 export default Home;
-        </div>
-      </section>
-
-      
-    </div>
-  );
-};
-
-export default Home;
-  )
-}
