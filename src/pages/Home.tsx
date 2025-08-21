@@ -35,6 +35,16 @@ const Home = () => {
                 className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl focus-ring"
               >
                 View Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
         </div>
       </section>
 
