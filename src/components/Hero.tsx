@@ -103,7 +103,6 @@ const Hero = () => {
               <div className="relative flex items-center justify-between mb-6 sm:mb-8">
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40 bg-gradient-to-br from-primary to-primary/80 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-xl interactive-scale p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
-                  <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40 bg-gradient-to-br from-primary to-primary/90 rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-lg p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
                     <img 
                       src="/my logo.svg" 
                       alt="JR Solvy Logo" 
@@ -178,10 +177,5 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
-};
-
-export default Hero;
   )
 }
