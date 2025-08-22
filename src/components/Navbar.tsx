@@ -40,9 +40,6 @@ const Navbar = () => {
                   src="/my logo.svg" 
                   alt="JR Solvy Logo" 
                   className="w-full h-full object-contain logo-themed"
-                  style={{
-                    filter: 'brightness(0) saturate(100%) invert(39%) sepia(74%) saturate(1729%) hue-rotate(204deg) brightness(98%) contrast(91%)'
-                  }}
                 />
               </div>
               <div className="flex flex-col min-w-0">
