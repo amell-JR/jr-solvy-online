@@ -26,7 +26,7 @@ const Home = () => {
             <div className="flex flex-col xs:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="bg-primary text-primary-foreground btn-responsive rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl interactive-scale focus-ring"
+                className="bg-innovation text-innovation-foreground btn-responsive rounded-xl font-semibold hover:bg-innovation/90 transition-all duration-300 shadow-lg hover:shadow-xl interactive-scale focus-ring"
               >
                 Contact Us
               </Link>
@@ -34,7 +34,7 @@ const Home = () => {
                 to="/services"
                 className="border-2 border-primary text-primary btn-responsive rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-xl focus-ring"
               >
-                View Services
+                Services
               </Link>
             </div>
           </div>

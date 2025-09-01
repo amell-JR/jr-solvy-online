@@ -25,12 +25,12 @@ const Hero = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-responsive-3xl font-bold text-foreground leading-tight">
-                Smart Digital Solutions,
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent block">Rooted in Innovation</span>
+                Smart Solutions.
+                <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent block">Digital Growth.</span>
               </h1>
               
               <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
-                At JRsolvy, we simplify technology for individuals, businesses, and communities. From AI-powered tools to creative digital services, we're here to help you grow, connect, and succeed.
+                We empower individuals, businesses, and communities with AI, IT, and digital solutions.
               </p>
             </div>
 
@@ -60,18 +60,18 @@ const Hero = () => {
             <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 justify-center lg:justify-start">
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground btn-responsive rounded-2xl font-bold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-primary focus-ring touch-target group"
+                className="bg-gradient-to-r from-innovation to-innovation/90 text-innovation-foreground btn-responsive rounded-2xl font-bold interactive-scale shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-innovation focus-ring touch-target group"
               >
-                <span>Let's Build Together</span>
+                <span>Get Started</span>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
               
               <Link
-                to="/services"
+                to="/about"
                 className="bg-white/80 backdrop-blur-sm border-2 border-primary/20 text-primary btn-responsive rounded-2xl font-bold hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-center shadow-lg hover:shadow-xl focus-ring touch-target group"
               >
                 <span className="flex items-center justify-center space-x-2">
-                  <span>View Services</span>
+                  <span>About Us</span>
                   <Play size={14} className="group-hover:scale-110 transition-transform duration-300" />
                 </span>
               </Link>

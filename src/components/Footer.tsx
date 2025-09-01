@@ -31,7 +31,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/85 text-sm leading-relaxed max-w-sm mx-auto sm:mx-0 font-medium">
-              Building AI-powered solutions and digital experiences for modern businesses.
+              Smart Tech, Simple Solutions.
             </p>
           </div>
 
@@ -97,9 +97,9 @@ const Footer = () => {
         <div className="relative mt-8 pt-6 border-t border-primary-foreground/20">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 text-primary-foreground/90 text-sm">
-              <span className="font-semibold">JR Solvy © 2025</span>
+              <span className="font-semibold">Copyright © 2025 JRsolvy</span>
               <Heart className="w-3 h-3 text-accent" fill="currentColor" />
-              <span>Empowering Innovation</span>
+              <span>Smart Tech, Simple Solutions.</span>
             </div>
           </div>
         </div>

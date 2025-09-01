@@ -109,6 +109,10 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+				innovation: {
+					DEFAULT: 'hsl(var(--innovation))',
+					foreground: 'hsl(var(--innovation-foreground))'
+				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'

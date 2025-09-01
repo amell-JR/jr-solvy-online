@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import SEOHead from '@/components/SEOHead';
 
@@ -34,21 +34,21 @@ const Contact = () => {
       title: 'Email',
       value: 'robertsunday333@gmail.com',
       description: 'Send us an email anytime',
-      color: 'bg-indigo-600'
+      color: 'bg-primary'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: 'Available on Request',
+      value: '+234 708 305 7837',
       description: 'Call us during business hours',
-      color: 'bg-sky-500'
+      color: 'bg-innovation'
     },
     {
-      icon: Clock,
-      title: 'Business Hours',
-      value: 'Mon - Fri: 9AM - 6PM',
-      description: 'Available for global clients',
-      color: 'bg-orange-500'
+      icon: MapPin,
+      title: 'Visit Us',
+      value: 'Ibeno L.G.A., Akwa Ibom State',
+      description: 'Our location in Nigeria',
+      color: 'bg-accent'
     }
   ];
 
@@ -96,11 +96,11 @@ const Contact = () => {
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Get in <span className="text-indigo-600">Touch</span>
+            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Get in <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Touch</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Ready to transform your business? Let's discuss your project and explore how 
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Ready to transform your ideas into reality? Let's discuss your project and explore how 
               we can help you achieve your digital goals.
             </p>
           </div>
@@ -154,7 +154,7 @@ const Contact = () => {
 
             {/* Additional Info */}
             <div className="space-y-8">
-              <div className="bg-indigo-600 rounded-2xl p-8 text-white">
+              <div className="bg-gradient-to-r from-primary to-innovation rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Why Work With Us?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
