@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="flex items-center justify-center sm:justify-start space-x-3">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center p-2 flex-shrink-0">
                 <img 
-                  src="/ma logo real.png" 
+                  src="/ma-logo-real.png" 
                   alt="JR Solvy Logo" 
                   className="w-full h-full object-contain"
                 />
