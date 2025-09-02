@@ -101,7 +101,7 @@ const Hero = () => {
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 rounded-xl flex items-center justify-center p-2">
                     <img 
-                      src="/ma logo real.png" 
+                      src="/ma-logo-real.png" 
                       alt="JR Solvy Logo" 
                       className="w-full h-full object-contain"
                     />
