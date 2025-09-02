@@ -25,43 +25,46 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white/70 backdrop-blur-lg border-b border-white/30 sticky top-0 z-50 transition-all duration-300 shadow-sm">
-      <div className="container-responsive">
-        <div className="flex justify-between items-center h-14 sm:h-16">
+    <nav className="bg-white/90 backdrop-blur-xl border-b border-white/40 sticky top-0 z-50 transition-all duration-300 shadow-lg shadow-primary/5">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 lg:h-20">
           <div className="flex items-center">
             <Link 
               to="/" 
-              className="flex items-center space-x-3 sm:space-x-4 focus-ring rounded-xl p-2 -m-2 hover:bg-primary/8 transition-all duration-300 group"
+              className="flex items-center space-x-4 focus-ring rounded-xl p-3 -m-3 hover:bg-primary/5 transition-all duration-500 group"
             >
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 interactive-scale group-hover:scale-110 transition-all duration-300 flex-shrink-0">
+              <div className="w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-br from-primary to-innovation rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-lg group-hover:shadow-xl p-2">
                 <img 
                   src="/my logo.svg" 
                   alt="JR Solvy Logo" 
-                  className="w-full h-full object-contain logo-themed"
+                  className="w-full h-full object-contain filter brightness-0 invert"
                 />
               </div>
-              <div className="flex flex-col min-w-0">
-                <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent whitespace-nowrap">JR Solvy</span>
-                <span className="text-xs sm:text-sm text-muted-foreground font-medium hidden sm:block whitespace-nowrap">Digital Innovation</span>
+              <div className="flex flex-col">
+                <span className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">JR Solvy</span>
+                <span className="text-sm text-muted-foreground font-medium hidden lg:block">Digital Innovation Hub</span>
               </div>
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
+          {/* Professional Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`px-3 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-semibold transition-all duration-300 focus-ring touch-target relative group ${
+                className={`relative px-6 py-3 rounded-xl text-base font-semibold transition-all duration-500 focus-ring group overflow-hidden ${
                   isActive(item.href)
-                    ? 'text-primary bg-gradient-to-r from-primary/10 to-primary/5 shadow-sm border border-primary/20'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-gradient-to-r hover:from-primary/5 hover:to-accent/5'
+                    ? 'text-white bg-gradient-to-r from-primary to-innovation shadow-lg border border-primary/30'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-white/50 hover:backdrop-blur-sm hover:border hover:border-white/30 hover:shadow-md'
                 }`}
               >
-                {item.name}
+                <span className="relative z-10">{item.name}</span>
                 {isActive(item.href) && (
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-innovation to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+                )}
+                {!isActive(item.href) && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-innovation/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
                 )}
               </Link>
             ))}
