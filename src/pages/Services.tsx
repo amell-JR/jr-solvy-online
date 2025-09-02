@@ -90,22 +90,14 @@ const Services = () => {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-innovation/10 section-padding relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-innovation/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section className="bg-secondary/30 section-padding">
         
-        <div className="container-responsive relative">
+        <div className="container-responsive">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground rounded-full text-sm font-semibold shadow-lg mb-6">
-              <Star className="w-4 h-4 mr-2" fill="currentColor" />
-              Professional Services
-            </div>
-            <h1 className="text-responsive-3xl font-bold text-foreground mb-6 leading-tight">
-              Our <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Services</span>
+            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+              Our <span className="text-primary">Services</span>
             </h1>
-            <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Comprehensive digital solutions tailored to your unique needs. From AI-powered applications to IT support, 
               we deliver results that drive growth and innovation.
             </p>
@@ -117,35 +109,35 @@ const Services = () => {
       <section className="bg-background section-padding">
         <div className="container-responsive">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-responsive-2xl font-bold text-foreground mb-4">
-              What We <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Offer</span>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+              What We <span className="text-primary">Offer</span>
             </h2>
-            <p className="text-responsive-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Four comprehensive service categories designed to meet all your digital needs
             </p>
           </div>
 
-          <div className="grid-responsive-auto gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, index) => (
-              <div key={index} className="card-modern hover:scale-105 transition-all duration-300 group">
+              <div key={index} className="bg-white border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300">
                 <div className="space-y-6">
                   {/* Header */}
                   <div className="flex items-start space-x-4">
-                    <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
                       {service.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                     </div>
                   </div>
                   
                   {/* Technologies */}
-                  <div className="bg-secondary/50 rounded-xl p-4">
+                  <div className="bg-secondary rounded-lg p-4">
                     <h4 className="text-sm font-semibold text-foreground mb-2">Technologies Used:</h4>
                     <div className="flex flex-wrap gap-2">
                       {service.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium">
+                        <span key={techIndex} className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-md font-medium">
                           {tech}
                         </span>
                       ))}
@@ -153,13 +145,13 @@ const Services = () => {
                   </div>
 
                   {/* Case Study */}
-                  <div className="bg-gradient-to-r from-primary/5 to-innovation/5 rounded-xl p-4 border border-primary/10">
+                  <div className="bg-primary/5 rounded-lg p-4 border border-primary/10">
                     <h4 className="text-sm font-semibold text-foreground mb-2">Success Story:</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-3">{service.caseStudy}</p>
                     <div className="space-y-1">
                       {service.results.map((result, resultIndex) => (
                         <div key={resultIndex} className="flex items-center space-x-2">
-                          <CheckCircle className="w-3 h-3 text-innovation" />
+                          <CheckCircle className="w-3 h-3 text-primary" />
                           <span className="text-xs font-medium text-foreground">{result}</span>
                         </div>
                       ))}
@@ -176,18 +168,18 @@ const Services = () => {
       <section className="bg-secondary/30 section-padding">
         <div className="container-responsive">
           <div className="text-center mb-12">
-            <h2 className="text-responsive-2xl font-bold text-foreground mb-4">
-              Why Choose <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">JRsolvy</span>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+              Why Choose <span className="text-primary">JRsolvy</span>
             </h2>
           </div>
           
-          <div className="grid-responsive-auto gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyChooseUs.map((item, index) => (
-              <div key={index} className="card-modern text-center group hover:scale-105 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-innovation/20 rounded-xl flex items-center justify-center mx-auto mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
+              <div key={index} className="bg-white border border-border rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 text-primary">
                   <item.icon className="w-6 h-6" />
                 </div>
-                <p className="text-foreground font-semibold">{item.text}</p>
+                <p className="text-foreground font-medium text-sm">{item.text}</p>
               </div>
             ))}
           </div>
@@ -198,23 +190,23 @@ const Services = () => {
       <section className="bg-background section-padding">
         <div className="container-responsive">
           <div className="text-center mb-12">
-            <h2 className="text-responsive-2xl font-bold text-foreground mb-4">
-              Our <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Process</span>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+              Our <span className="text-primary">Process</span>
             </h2>
-            <p className="text-responsive-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               A proven methodology that ensures your project's success from start to finish
             </p>
           </div>
           
-          <div className="grid-responsive-auto gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {process.map((step, index) => (
-              <div key={index} className="card-modern text-center group hover:scale-105 transition-all duration-300">
+              <div key={index} className="bg-white border border-border rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
                 <div className="text-4xl mb-4">{step.icon}</div>
-                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center mx-auto mb-4 font-bold group-hover:scale-110 transition-transform duration-300">
+                <div className="w-10 h-10 bg-primary text-primary-foreground rounded-lg flex items-center justify-center mx-auto mb-4 font-bold text-sm">
                   {step.step}
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                <h3 className="text-base font-semibold text-foreground mb-2">{step.title}</h3>
+                <p className="text-muted-foreground text-sm">{step.description}</p>
               </div>
             ))}
           </div>
@@ -222,32 +214,28 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-primary via-primary to-innovation section-padding relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-48 -translate-y-48 blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full translate-x-48 translate-y-48 blur-3xl"></div>
-        </div>
+      <section className="bg-primary section-padding">
         
-        <div className="container-responsive relative">
+        <div className="container-responsive">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-responsive-2xl font-bold text-white mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
               Ready to Get Started?
             </h2>
-            <p className="text-responsive-base text-white/90 leading-relaxed mb-8">
+            <p className="text-base text-white/90 leading-relaxed mb-8">
               Let's discuss your project and see how we can help bring your vision to life.
             </p>
             
-            <div className="flex flex-col xs:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="bg-white text-primary btn-responsive rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl interactive-scale flex items-center justify-center space-x-2"
+                className="bg-white text-primary px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
               >
                 <span>Get Started</span>
                 <ArrowRight size={16} />
               </Link>
               <Link
                 to="/about"
-                className="border-2 border-white text-white btn-responsive rounded-2xl font-bold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl interactive-scale"
+                className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-primary transition-all duration-300"
               >
                 Learn More
               </Link>

@@ -42,18 +42,14 @@ const About = () => {
       />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-innovation/10 section-padding relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-innovation/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section className="bg-secondary/30 section-padding">
         
-        <div className="container-responsive relative">
+        <div className="container-responsive">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-responsive-3xl font-bold text-foreground mb-6 leading-tight">
-              About <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">JRsolvy</span>
+            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+              About <span className="text-primary">JRsolvy</span>
             </h1>
-            <p className="text-responsive-base text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               We empower individuals, businesses, and communities with innovative digital solutions. 
               We combine technology, creativity, and expertise to solve everyday challenges.
             </p>
@@ -67,24 +63,24 @@ const About = () => {
           <div className="grid-responsive-2 items-center gap-8 lg:gap-16">
             <div className="space-y-8">
               <div>
-                <h2 className="text-responsive-2xl font-bold text-foreground mb-4">Mission</h2>
-                <p className="text-responsive-base text-muted-foreground leading-relaxed">
+                <h2 className="text-2xl font-bold text-foreground mb-4">Mission</h2>
+                <p className="text-base text-muted-foreground leading-relaxed">
                   JRsolvy exists to empower individuals, businesses, and communities with innovative digital solutions. 
                   We combine technology, creativity, and expertise to solve everyday challenges.
                 </p>
               </div>
               <div>
-                <h2 className="text-responsive-2xl font-bold text-foreground mb-4">Vision</h2>
-                <p className="text-responsive-base text-muted-foreground leading-relaxed">
+                <h2 className="text-2xl font-bold text-foreground mb-4">Vision</h2>
+                <p className="text-base text-muted-foreground leading-relaxed">
                   To become Africa's leading hub for AI innovation, digital solutions, and IT services, 
                   empowering the next generation with technology-driven growth.
                 </p>
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-primary/10 to-innovation/10 rounded-3xl p-8 backdrop-blur-sm border border-primary/20">
+              <div className="bg-white rounded-2xl p-8 border border-border shadow-lg">
                 <div className="text-center space-y-6">
-                  <div className="w-16 h-16 mx-auto text-innovation bg-innovation/10 rounded-2xl flex items-center justify-center">
+                  <div className="w-16 h-16 mx-auto text-primary bg-primary/10 rounded-xl flex items-center justify-center">
                     <Zap className="w-8 h-8" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground">Innovation at Scale</h3>
@@ -102,20 +98,20 @@ const About = () => {
       <section className="bg-secondary/30 section-padding">
         <div className="container-responsive">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-responsive-2xl font-bold text-foreground mb-4">Core Values</h2>
-            <p className="text-responsive-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Core Values</h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               The principles that guide everything we do at JRsolvy.
             </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {values.map((value, index) => (
-              <div key={index} className="card-modern text-center group hover:scale-105 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-innovation/20 rounded-2xl flex items-center justify-center mx-auto mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
+              <div key={index} className="bg-white border border-border rounded-xl p-6 text-center hover:shadow-md transition-all duration-300">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 text-primary">
                   <value.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
+                <h3 className="text-base font-semibold text-foreground mb-2">{value.title}</h3>
+                <p className="text-muted-foreground text-sm">{value.description}</p>
               </div>
             ))}
           </div>
@@ -123,33 +119,29 @@ const About = () => {
       </section>
 
       {/* Our Promise */}
-      <section className="bg-gradient-to-br from-primary via-primary to-primary/90 section-padding relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-48 -translate-y-48 blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-innovation rounded-full translate-x-48 translate-y-48 blur-3xl"></div>
-        </div>
+      <section className="bg-primary section-padding">
         
-        <div className="container-responsive relative">
+        <div className="container-responsive">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-responsive-2xl font-bold text-white mb-8">
+            <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
               Ready to Transform Your Ideas?
             </h2>
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 mb-8">
-              <p className="text-responsive-base text-white font-medium leading-relaxed">
+            <div className="bg-white/10 rounded-2xl p-6 mb-8">
+              <p className="text-base text-white leading-relaxed">
                 At JRsolvy, we don't just build technology — we build trust, empowerment, and long-lasting impact through digital innovation.
               </p>
             </div>
             
-            <div className="flex flex-col xs:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="bg-white text-primary btn-responsive rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl interactive-scale"
+                className="bg-white text-primary px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Get Started
               </Link>
               <Link
                 to="/services"
-                className="border-2 border-white text-white btn-responsive rounded-2xl font-bold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg hover:shadow-xl interactive-scale"
+                className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-primary transition-all duration-300"
               >
                 Our Services
               </Link>
