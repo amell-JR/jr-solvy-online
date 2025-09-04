@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
-import { Send, User, Mail, MessageSquare } from 'lucide-react';
+import { Send, User, Mail, MessageSquare, Briefcase, Phone } from 'lucide-react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    projectType: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,6 +25,13 @@ const ContactForm = () => {
     });
   };
 
+  const handleSelectChange = (value: string) => {
+    setFormData({
+      ...formData,
+      projectType: value
+    });
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -31,6 +41,8 @@ const ContactForm = () => {
         body: {
           name: formData.name,
           email: formData.email,
+          phone: formData.phone,
+          projectType: formData.projectType,
           message: formData.message,
         },
       });
@@ -44,7 +56,7 @@ const ContactForm = () => {
         description: "Thank you for your message. We'll get back to you soon.",
       });
       
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', projectType: '', message: '' });
     } catch (error) {
       console.error('Error sending contact email:', error);
       toast({
@@ -95,6 +107,45 @@ const ContactForm = () => {
         </div>
 
         <div>
+          <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+            <Phone className="inline mr-2" size={16} />
+            Phone Number (Optional)
+          </label>
+          <Input
+            id="phone"
+            name="phone"
+            type="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="+234 708 305 7837"
+            className="w-full"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="projectType" className="block text-sm font-medium text-foreground mb-2">
+            <Briefcase className="inline mr-2" size={16} />
+            Project Type
+          </label>
+          <Select value={formData.projectType} onValueChange={handleSelectChange}>
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="Select the type of project you need help with" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="web-development">🌐 Web Development</SelectItem>
+              <SelectItem value="mobile-app">📱 Mobile App Development</SelectItem>
+              <SelectItem value="ai-solutions">🤖 AI & Software Solutions</SelectItem>
+              <SelectItem value="it-support">🔧 IT Support & Technical Services</SelectItem>
+              <SelectItem value="graphic-design">🎨 Graphic Design & Branding</SelectItem>
+              <SelectItem value="ecommerce">🛒 E-commerce Solutions</SelectItem>
+              <SelectItem value="training">📚 Training & Education</SelectItem>
+              <SelectItem value="consulting">💡 Consulting & Strategy</SelectItem>
+              <SelectItem value="other">❓ Other / Not Sure</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
+        <div>
           <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
             <MessageSquare className="inline mr-2" size={16} />
             Message
@@ -105,7 +156,7 @@ const ContactForm = () => {
             required
             value={formData.message}
             onChange={handleChange}
-            placeholder="Tell us about your project or how we can help..."
+            placeholder="Please describe your project in detail. Include your goals, timeline, budget range, and any specific requirements..."
             className="w-full min-h-[120px]"
           />
         </div>
