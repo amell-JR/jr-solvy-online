@@ -64,18 +64,18 @@ const Contact = () => {
 
   if (isSubmitted) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center max-w-md mx-auto p-8">
-          <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle className="text-white" size={40} />
+      <div className="pt-16 lg:pt-20 min-h-screen flex items-center justify-center bg-secondary/20">
+        <div className="text-center max-w-sm lg:max-w-md mx-auto p-6 lg:p-8">
+          <div className="w-16 h-16 lg:w-20 lg:h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle className="text-white" size={32} />
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Thank You!</h2>
+          <p className="text-muted-foreground mb-6 text-sm lg:text-base">
             Your message has been sent successfully. We'll get back to you within 24 hours.
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
-            className="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
+            className="bg-primary text-primary-foreground px-6 lg:px-8 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 text-sm lg:text-base"
           >
             Send Another Message
           </button>
@@ -93,13 +93,13 @@ const Contact = () => {
         url="https://jrsolvy.com/contact"
       />
       {/* Hero Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-secondary/20 py-16 lg:py-20">
+        <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 lg:mb-6">
               Get in <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Touch</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Ready to transform your ideas into reality? Let's discuss your project and explore how 
               we can help you achieve your digital goals.
             </p>
@@ -108,24 +108,24 @@ const Contact = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <section className="py-16 lg:py-20 bg-background">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+                className="text-center p-6 lg:p-8 bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/30"
               >
-                <div className={`w-16 h-16 ${info.color} rounded-xl flex items-center justify-center mx-auto mb-4`}>
-                  <info.icon className="text-white" size={28} />
+                <div className={`w-14 h-14 lg:w-16 lg:h-16 ${info.color} rounded-xl flex items-center justify-center mx-auto mb-4`}>
+                  <info.icon className="text-white" size={24} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg lg:text-xl font-semibold text-foreground mb-2">
                   {info.title}
                 </h3>
-                <p className="text-lg font-medium text-gray-800 mb-1">
+                <p className="text-base lg:text-lg font-medium text-foreground mb-1">
                   {info.value}
                 </p>
-                <p className="text-gray-600 text-sm">
+                <p className="text-muted-foreground text-sm">
                   {info.description}
                 </p>
               </div>
@@ -135,16 +135,16 @@ const Contact = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="py-16 lg:py-20 bg-secondary/20">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Form */}
             <div>
-              <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <div className="bg-card rounded-2xl shadow-lg p-6 lg:p-8 border border-border/50">
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4 lg:mb-6">
                   Send us a Message
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-muted-foreground mb-6 lg:mb-8">
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
 
@@ -153,61 +153,61 @@ const Contact = () => {
             </div>
 
             {/* Additional Info */}
-            <div className="space-y-8">
-              <div className="bg-gradient-to-r from-primary to-innovation rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Why Work With Us?</h3>
-                <ul className="space-y-4">
+            <div className="space-y-6 lg:space-y-8">
+              <div className="bg-gradient-to-r from-primary to-innovation rounded-2xl p-6 lg:p-8 text-white">
+                <h3 className="text-xl lg:text-2xl font-bold mb-4">Why Work With Us?</h3>
+                <ul className="space-y-3 lg:space-y-4">
                   <li className="flex items-start space-x-3">
-                    <CheckCircle size={20} className="mt-1 flex-shrink-0" />
-                    <span>Proven track record with 50+ successful projects</span>
+                    <CheckCircle size={18} className="mt-1 flex-shrink-0" />
+                    <span className="text-sm lg:text-base">Proven track record with 50+ successful projects</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <CheckCircle size={20} className="mt-1 flex-shrink-0" />
-                    <span>Expert team with cutting-edge technology skills</span>
+                    <CheckCircle size={18} className="mt-1 flex-shrink-0" />
+                    <span className="text-sm lg:text-base">Expert team with cutting-edge technology skills</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <CheckCircle size={20} className="mt-1 flex-shrink-0" />
-                    <span>24/7 support and maintenance services</span>
+                    <CheckCircle size={18} className="mt-1 flex-shrink-0" />
+                    <span className="text-sm lg:text-base">24/7 support and maintenance services</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <CheckCircle size={20} className="mt-1 flex-shrink-0" />
-                    <span>Competitive pricing with transparent communication</span>
+                    <CheckCircle size={18} className="mt-1 flex-shrink-0" />
+                    <span className="text-sm lg:text-base">Competitive pricing with transparent communication</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="bg-card rounded-2xl shadow-lg p-6 lg:p-8 border border-border/50">
+                <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4">
                   What Happens Next?
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-sm">1</span>
+                  <div className="flex items-start space-x-3 lg:space-x-4">
+                    <div className="w-7 h-7 lg:w-8 lg:h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-xs lg:text-sm">1</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">We Review Your Message</h4>
-                      <p className="text-gray-600 text-sm">Our team carefully reviews your requirements and project details.</p>
+                      <h4 className="font-semibold text-foreground text-sm lg:text-base">We Review Your Message</h4>
+                      <p className="text-muted-foreground text-xs lg:text-sm">Our team carefully reviews your requirements and project details.</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-sm">2</span>
+                  <div className="flex items-start space-x-3 lg:space-x-4">
+                    <div className="w-7 h-7 lg:w-8 lg:h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-xs lg:text-sm">2</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Initial Consultation</h4>
-                      <p className="text-gray-600 text-sm">We schedule a free consultation call to discuss your project in detail.</p>
+                      <h4 className="font-semibold text-foreground text-sm lg:text-base">Initial Consultation</h4>
+                      <p className="text-muted-foreground text-xs lg:text-sm">We schedule a free consultation call to discuss your project in detail.</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-sm">3</span>
+                  <div className="flex items-start space-x-3 lg:space-x-4">
+                    <div className="w-7 h-7 lg:w-8 lg:h-8 bg-innovation rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-xs lg:text-sm">3</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Proposal & Timeline</h4>
-                      <p className="text-gray-600 text-sm">We provide a detailed proposal with timeline and pricing information.</p>
+                      <h4 className="font-semibold text-foreground text-sm lg:text-base">Proposal & Timeline</h4>
+                      <p className="text-muted-foreground text-xs lg:text-sm">We provide a detailed proposal with timeline and pricing information.</p>
                     </div>
                   </div>
                 </div>

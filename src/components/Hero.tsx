@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
 
             {/* Clean Benefits Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto lg:mx-0">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto lg:mx-0">
               <div className="group bg-card/50 border border-border/50 rounded-xl p-6 hover:bg-card hover:border-primary/30 transition-all duration-300">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <CheckCircle className="text-primary" size={20} />
@@ -102,16 +102,16 @@ const Hero = () => {
                 {/* Clean Header */}
                 <div className="flex items-center mb-8">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center p-3">
-                      <img 
-                        src="/ma-logo-real.png" 
-                        alt="JR Solvy Logo" 
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
+                <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-xl bg-primary/10 flex items-center justify-center p-2 lg:p-3">
+                  <img 
+                    src="/ma-logo-real.png" 
+                    alt="JR Solvy Logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                     <div>
-                      <h3 className="text-xl font-bold text-foreground">JR Solvy</h3>
-                      <p className="text-primary font-semibold text-sm">Digital Innovation Partner</p>
+                      <h3 className="text-lg lg:text-xl font-bold text-foreground">JR Solvy</h3>
+                      <p className="text-primary font-semibold text-xs lg:text-sm">Digital Innovation Partner</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                         <span className="text-xs text-muted-foreground font-medium">Available for Projects</span>
@@ -121,19 +121,19 @@ const Hero = () => {
                 </div>
 
                 {/* Clean Services Grid */}
-                <div className="space-y-4 mb-8">
-                  <h4 className="text-base font-semibold text-foreground">Core Services</h4>
-                  <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-4 mb-6 lg:mb-8">
+                  <h4 className="text-sm lg:text-base font-semibold text-foreground">Core Services</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-3">
                     {[
                       { name: 'AI Solutions', status: 'Featured' },
                       { name: 'Web Development', status: 'Available' },
                       { name: 'Mobile Apps', status: 'Available' },
                       { name: 'Digital Strategy', status: 'Premium' }
                     ].map((service, index) => (
-                      <div key={index} className="bg-secondary/30 rounded-lg p-4 border border-border/30 hover:bg-secondary/50 transition-colors">
+                      <div key={index} className="bg-secondary/30 rounded-lg p-3 lg:p-4 border border-border/30 hover:bg-secondary/50 transition-colors">
                         <div className="flex items-center justify-between mb-1">
-                          <span className="text-foreground font-medium text-sm">{service.name}</span>
-                          <span className={`text-xs px-2 py-0.5 rounded font-medium ${
+                          <span className="text-foreground font-medium text-xs lg:text-sm">{service.name}</span>
+                          <span className={`text-xs px-1.5 lg:px-2 py-0.5 rounded font-medium ${
                             service.status === 'Featured' ? 'bg-primary/20 text-primary' :
                             service.status === 'Premium' ? 'bg-accent/20 text-accent-foreground' :
                             'bg-emerald-500/20 text-emerald-700'
