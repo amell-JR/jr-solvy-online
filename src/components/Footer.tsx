@@ -21,11 +21,11 @@ const Footer = () => {
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-lg font-bold text-primary-foreground">JR Solvy</span>
-                <span className="text-sm text-primary-foreground/80 font-medium">Digital Innovation</span>
+                <span className="text-sm text-primary-foreground/80 font-medium">AI & Technology Solutions</span>
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm max-w-sm mx-auto sm:mx-0">
-              Smart Tech, Simple Solutions.
+              Simplifying Technology, Empowering People.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="flex items-center justify-center space-x-2 text-primary-foreground/80 text-sm">
               <span>Copyright © 2025 JRsolvy</span>
               <span>•</span>
-              <span>Smart Tech, Simple Solutions</span>
+              <span>Simplifying Technology, Empowering People</span>
             </div>
           </div>
         </div>

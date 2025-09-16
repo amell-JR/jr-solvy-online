@@ -97,11 +97,10 @@ const Contact = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 lg:mb-6">
-              Get in <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Touch</span>
+              Let's Work <span className="bg-gradient-to-r from-primary to-innovation bg-clip-text text-transparent">Together</span>
             </h1>
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Ready to transform your ideas into reality? Let's discuss your project and explore how 
-              we can help you achieve your digital goals.
+              Whether you're a startup, enterprise, or individual, JR Solvy is here to deliver AI-powered innovation, cybersecurity, and support for your success. Connect with us today.
             </p>
           </div>
         </div>
@@ -159,19 +158,19 @@ const Contact = () => {
                 <ul className="space-y-3 lg:space-y-4">
                   <li className="flex items-start space-x-3">
                     <CheckCircle size={18} className="mt-1 flex-shrink-0" />
-                    <span className="text-sm lg:text-base">Proven track record with 50+ successful projects</span>
+                    <span className="text-sm lg:text-base">AI services designed for any industry</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckCircle size={18} className="mt-1 flex-shrink-0" />
-                    <span className="text-sm lg:text-base">Expert team with cutting-edge technology skills</span>
+                    <span className="text-sm lg:text-base">Trusted cybersecurity and technical support</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckCircle size={18} className="mt-1 flex-shrink-0" />
-                    <span className="text-sm lg:text-base">24/7 support and maintenance services</span>
+                    <span className="text-sm lg:text-base">Scalable solutions for startups to enterprises</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckCircle size={18} className="mt-1 flex-shrink-0" />
-                    <span className="text-sm lg:text-base">Competitive pricing with transparent communication</span>
+                    <span className="text-sm lg:text-base">Technology that drives real impact</span>
                   </li>
                 </ul>
               </div>

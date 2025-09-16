@@ -11,9 +11,9 @@ interface SEOHeadProps {
 }
 
 const SEOHead: React.FC<SEOHeadProps> = ({
-  title = "JR Solvy | AI Solutions & Digital Innovation",
-  description = "Empowering Innovation. Accelerating Tomorrow. JR Solvy provides cutting-edge AI solutions, web development, mobile apps, and digital marketing services.",
-  keywords = "AI solutions, web development, mobile apps, digital marketing, automation, React, React Native, machine learning, UI/UX design",
+  title = "JR Solvy | AI Services, Cybersecurity & Technical Support",
+  description = "JR Solvy delivers intelligent and scalable technology solutions — from AI innovations to cybersecurity, software development, and reliable technical support — helping businesses and individuals succeed in the digital age.",
+  keywords = "AI solutions, cybersecurity, ethical hacking, software development, technical support, tech consulting, automation, machine learning, digital transformation",
   image = "/preview-image.jpg",
   url = "https://jrsolvy.com",
   type = "website"
@@ -77,11 +77,11 @@ const SEOHead: React.FC<SEOHeadProps> = ({
           "areaServed": "Worldwide",
           "serviceType": [
             "AI Solutions",
-            "Web Development", 
-            "Mobile App Development",
-            "Digital Marketing",
-            "UI/UX Design",
-            "IT Consulting"
+            "Cybersecurity & Ethical Hacking",
+            "Software Development",
+            "Tech Consulting & Training",
+            "Technical Support Services",
+            "Digital Solutions"
           ]
         })}
       </script>

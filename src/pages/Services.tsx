@@ -10,47 +10,47 @@ const Services = () => {
   const services = [
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "AI & Software Solutions",
-      description: "AI-powered apps including translation tools, job assistants, fact-checking systems, custom software development, and modern web & mobile applications.",
-      technologies: ["React", "Python", "OpenAI GPT", "TensorFlow"],
-      caseStudy: "Built an AI translation app for GlobalCorp that supports 50+ languages with 95% accuracy, processing 10,000+ translations daily and reducing translation costs by 70%.",
-      results: ["50+ languages supported", "95% translation accuracy", "70% cost reduction"],
+      title: "AI Solutions for Every Field",
+      description: "AI-powered automation, data analysis, virtual assistants, and intelligent applications across industries including education, healthcare, retail, security, and more.",
+      technologies: ["OpenAI GPT", "TensorFlow", "Python", "Machine Learning"],
+      caseStudy: "Deployed AI automation system for RetailCorp across 5 departments, reducing manual tasks by 80% and improving decision-making speed by 60% through predictive analytics.",
+      results: ["80% reduction in manual tasks", "60% faster decision-making", "5 departments automated"],
       color: "bg-gradient-to-br from-primary to-primary/80"
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "IT Support & Technical Services",
-      description: "Comprehensive remote & on-site IT support, system troubleshooting & maintenance, cybersecurity awareness & consulting for businesses.",
-      technologies: ["Remote Support Tools", "System Monitoring", "Security Audits", "Network Management"],
-      caseStudy: "Provided 24/7 IT support for TechStartup, reducing system downtime by 90% and implementing cybersecurity measures that prevented 15+ potential threats.",
-      results: ["90% reduction in downtime", "24/7 support coverage", "15+ threats prevented"],
+      title: "Cybersecurity & Ethical Hacking",
+      description: "Advanced protection, penetration testing, security training, and customized defense strategies to protect organizations and individuals.",
+      technologies: ["Penetration Testing", "Security Audits", "Threat Analysis", "Ethical Hacking"],
+      caseStudy: "Conducted comprehensive security assessment for FinanceCorp, identifying 25+ vulnerabilities and implementing defense strategies that prevented 3 major breach attempts.",
+      results: ["25+ vulnerabilities identified", "3 breach attempts prevented", "100% security compliance achieved"],
       color: "bg-gradient-to-br from-innovation to-innovation/80"
     },
     {
       icon: <Palette className="w-8 h-8" />,
-      title: "Digital & Creative Services",
-      description: "Professional graphic design & branding, engaging content creation, and comprehensive e-commerce solutions using Shopify, Whop, and Selar platforms.",
-      technologies: ["Figma", "Adobe Creative Suite", "Shopify", "Content Strategy"],
-      caseStudy: "Created complete brand identity and e-commerce store for StyleBrand, increasing online sales by 200% and building a social media following of 25,000+ in 6 months.",
-      results: ["200% increase in sales", "25,000+ social followers", "Complete brand transformation"],
+      title: "Software Development",
+      description: "Custom mobile apps, web platforms, automation tools, and scalable solutions tailored to client needs across various industries.",
+      technologies: ["React", "Node.js", "Mobile Development", "Cloud Platforms"],
+      caseStudy: "Built custom inventory management system for LogisticsCorp, streamlining operations across 10 warehouses and reducing processing time by 75%.",
+      results: ["10 warehouses connected", "75% faster processing", "Real-time inventory tracking"],
       color: "bg-gradient-to-br from-accent to-accent/80"
     },
     {
       icon: <GraduationCap className="w-8 h-8" />,
-      title: "Education & Training",
-      description: "Expert AI tutoring in Physics, Computer Science, and Cybersecurity, plus digital skills training and professional document formatting & consulting.",
-      technologies: ["AI Learning Tools", "Interactive Tutorials", "Assessment Systems", "Document Templates"],
-      caseStudy: "Developed AI tutoring program for EduCenter, helping 500+ students improve their physics grades by an average of 35% while providing 24/7 personalized learning support.",
-      results: ["500+ students helped", "35% grade improvement", "24/7 learning support"],
+      title: "Tech Consulting & Training",
+      description: "Digital transformation guidance, AI adoption strategies, upskilling programs, and practical training to prepare teams for the future.",
+      technologies: ["Digital Strategy", "AI Implementation", "Training Programs", "Change Management"],
+      caseStudy: "Led digital transformation for ManufacturingCorp, training 200+ employees on AI tools and increasing operational efficiency by 45% within 6 months.",
+      results: ["200+ employees trained", "45% efficiency increase", "Complete digital transformation"],
       color: "bg-gradient-to-br from-purple-600 to-purple-500"
     }
   ];
 
   const whyChooseUs = [
-    { text: 'Professional & reliable services', icon: Shield },
-    { text: 'Tailored solutions for your needs', icon: Monitor },
-    { text: 'Affordable & flexible packages', icon: CheckCircle },
-    { text: 'Dedicated support every step of the way', icon: Users }
+    { text: 'AI services designed for any industry', icon: Shield },
+    { text: 'Trusted cybersecurity and technical support', icon: Monitor },
+    { text: 'Scalable solutions for startups to enterprises', icon: CheckCircle },
+    { text: 'Technology that drives real impact', icon: Users }
   ];
 
   const process = [
@@ -98,8 +98,7 @@ const Services = () => {
               Our <span className="text-primary">Services</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Comprehensive digital solutions tailored to your unique needs. From AI-powered applications to IT support, 
-              we deliver results that drive growth and innovation.
+              Comprehensive technology solutions tailored to your unique needs. From AI-powered applications across industries to cybersecurity and technical support, we deliver results that drive growth and innovation.
             </p>
           </div>
         </div>
@@ -113,7 +112,7 @@ const Services = () => {
               What We <span className="text-primary">Offer</span>
             </h2>
             <p className="text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Four comprehensive service categories designed to meet all your digital needs
+              Four comprehensive service categories designed to bring AI and innovation to every field
             </p>
           </div>
 

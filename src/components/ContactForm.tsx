@@ -132,14 +132,12 @@ const ContactForm = () => {
               <SelectValue placeholder="Select the type of project you need help with" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="web-development">🌐 Web Development</SelectItem>
-              <SelectItem value="mobile-app">📱 Mobile App Development</SelectItem>
               <SelectItem value="ai-solutions">🤖 AI & Software Solutions</SelectItem>
-              <SelectItem value="it-support">🔧 IT Support & Technical Services</SelectItem>
-              <SelectItem value="graphic-design">🎨 Graphic Design & Branding</SelectItem>
-              <SelectItem value="ecommerce">🛒 E-commerce Solutions</SelectItem>
-              <SelectItem value="training">📚 Training & Education</SelectItem>
-              <SelectItem value="consulting">💡 Consulting & Strategy</SelectItem>
+              <SelectItem value="cybersecurity">🔒 Cybersecurity & Ethical Hacking</SelectItem>
+              <SelectItem value="software-development">💻 Software Development</SelectItem>
+              <SelectItem value="tech-consulting">📚 Tech Consulting & Training</SelectItem>
+              <SelectItem value="technical-support">🔧 Technical Support Services</SelectItem>
+              <SelectItem value="digital-solutions">🌐 E-Commerce & Digital Solutions</SelectItem>
               <SelectItem value="other">❓ Other / Not Sure</SelectItem>
             </SelectContent>
           </Select>
