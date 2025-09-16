@@ -13,16 +13,16 @@ const Hero = () => {
             
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                <span className="text-foreground block">Smart Solutions.</span>
-                <span className="text-primary block mt-1">Digital Growth.</span>
+                <span className="text-foreground block">AI Services, Cybersecurity</span>
+                <span className="text-primary block mt-1">& Technical Support</span>
               </h1>
               
               <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0">
-                We empower businesses with cutting-edge 
-                <span className="text-primary font-semibold"> AI</span>, 
-                <span className="text-primary font-semibold"> IT</span>, and 
-                <span className="text-primary font-semibold"> digital solutions</span> 
-                that drive real results.
+                JR Solvy delivers intelligent and scalable technology solutions — from 
+                <span className="text-primary font-semibold"> AI innovations</span> to 
+                <span className="text-primary font-semibold"> cybersecurity</span>, 
+                <span className="text-primary font-semibold"> software development</span>, and 
+                reliable technical support — helping businesses and individuals succeed in the digital age.
               </p>
             </div>
 
@@ -32,24 +32,24 @@ const Hero = () => {
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <CheckCircle className="text-primary" size={20} />
                 </div>
-                <h3 className="text-foreground font-semibold text-base mb-2">People-First</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">Human-centered design in every solution</p>
+                <h3 className="text-foreground font-semibold text-base mb-2">AI for Every Field</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">AI services designed for any industry</p>
               </div>
               
               <div className="group bg-card/50 border border-border/50 rounded-xl p-6 hover:bg-card hover:border-primary/30 transition-all duration-300">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Zap className="text-primary" size={20} />
                 </div>
-                <h3 className="text-foreground font-semibold text-base mb-2">Accessible</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">Technology that works for everyone</p>
+                <h3 className="text-foreground font-semibold text-base mb-2">Trusted Security</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Advanced cybersecurity and technical support</p>
               </div>
               
               <div className="group bg-card/50 border border-border/50 rounded-xl p-6 hover:bg-card hover:border-primary/30 transition-all duration-300">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Award className="text-primary" size={20} />
                 </div>
-                <h3 className="text-foreground font-semibold text-base mb-2">Innovation</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">Cutting-edge with measurable results</p>
+                <h3 className="text-foreground font-semibold text-base mb-2">Scalable Solutions</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">From startups to enterprises</p>
               </div>
             </div>
 
@@ -111,7 +111,7 @@ const Hero = () => {
                 </div>
                     <div>
                       <h3 className="text-lg lg:text-xl font-bold text-foreground">JR Solvy</h3>
-                      <p className="text-primary font-semibold text-xs lg:text-sm">Digital Innovation Partner</p>
+                      <p className="text-primary font-semibold text-xs lg:text-sm">AI & Technology Solutions</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
                         <span className="text-xs text-muted-foreground font-medium">Available for Projects</span>
@@ -125,10 +125,10 @@ const Hero = () => {
                   <h4 className="text-sm lg:text-base font-semibold text-foreground">Core Services</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-3">
                     {[
-                      { name: 'AI Solutions', status: 'Featured' },
-                      { name: 'Web Development', status: 'Available' },
-                      { name: 'Mobile Apps', status: 'Available' },
-                      { name: 'Digital Strategy', status: 'Premium' }
+                      { name: 'AI for Every Field', status: 'Featured' },
+                      { name: 'Cybersecurity', status: 'Available' },
+                      { name: 'Software Development', status: 'Available' },
+                      { name: 'Technical Support', status: 'Premium' }
                     ].map((service, index) => (
                       <div key={index} className="bg-secondary/30 rounded-lg p-3 lg:p-4 border border-border/30 hover:bg-secondary/50 transition-colors">
                         <div className="flex items-center justify-between mb-1">

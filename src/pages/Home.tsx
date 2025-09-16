@@ -23,12 +23,12 @@ const Home = () => {
             {/* Clean headline */}
             <div className="space-y-4 mb-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-                Transform Your Business with
-                <span className="text-primary block mt-1">Digital Excellence</span>
+                Ready to Bring AI and Innovation
+                <span className="text-primary block mt-1">Into Your World?</span>
               </h2>
               
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Let's build something extraordinary that drives real results and creates lasting impact for your business.
+                Whether you're a startup, enterprise, or individual, JR Solvy is here to deliver AI-powered innovation, cybersecurity, and support for your success.
               </p>
             </div>
             

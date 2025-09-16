@@ -8,27 +8,27 @@ const About = () => {
     {
       icon: Zap,
       title: 'Innovation',
-      description: 'Embracing new ideas and technologies'
+      description: 'Bringing AI and creativity into every field'
     },
     {
       icon: Award,
-      title: 'Excellence',
-      description: 'Delivering quality in everything we do'
+      title: 'Integrity',
+      description: 'Delivering solutions with trust and transparency'
     },
     {
       icon: Shield,
-      title: 'Integrity',
-      description: 'Honest and transparent relationships'
+      title: 'Accessibility',
+      description: 'Making technology usable for all'
     },
     {
       icon: Users,
-      title: 'Empowerment',
-      description: 'Enabling success for our clients'
+      title: 'Reliability',
+      description: 'Supporting clients with dependable service'
     },
     {
       icon: Heart,
-      title: 'Service',
-      description: 'Putting people first in all we do'
+      title: 'Impact',
+      description: 'Creating technology that makes a difference'
     }
   ];
 
@@ -50,8 +50,7 @@ const About = () => {
               About <span className="text-primary">JRsolvy</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              We empower individuals, businesses, and communities with innovative digital solutions. 
-              We combine technology, creativity, and expertise to solve everyday challenges.
+              JR Solvy is a technology startup dedicated to building AI-powered solutions, secure systems, and digital tools that work across industries. We believe in making innovation accessible, reliable, and impactful for everyone.
             </p>
           </div>
         </div>
@@ -65,15 +64,13 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-4">Mission</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  JRsolvy exists to empower individuals, businesses, and communities with innovative digital solutions. 
-                  We combine technology, creativity, and expertise to solve everyday challenges.
+                  To simplify technology for universal adoption, deliver AI solutions that empower people and businesses in every field, and build safe, smart, and sustainable digital systems.
                 </p>
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-4">Vision</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  To become Africa's leading hub for AI innovation, digital solutions, and IT services, 
-                  empowering the next generation with technology-driven growth.
+                  To be a trusted leader in AI, cybersecurity, and digital innovation, shaping how technology transforms industries.
                 </p>
               </div>
             </div>
@@ -83,9 +80,9 @@ const About = () => {
                   <div className="w-16 h-16 mx-auto text-primary bg-primary/10 rounded-xl flex items-center justify-center">
                     <Zap className="w-8 h-8" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Innovation at Scale</h3>
+                  <h3 className="text-xl font-bold text-foreground">Technology That Works Everywhere</h3>
                   <p className="text-muted-foreground">
-                    From small startups to established enterprises, we deliver solutions that grow with your ambitions.
+                    In classrooms, businesses, enterprises, and communities — our AI-driven services are designed to meet real needs across industries.
                   </p>
                 </div>
               </div>
@@ -128,7 +125,7 @@ const About = () => {
             </h2>
             <div className="bg-white/10 rounded-2xl p-6 mb-8">
               <p className="text-base text-white leading-relaxed">
-                At JRsolvy, we don't just build technology — we build trust, empowerment, and long-lasting impact through digital innovation.
+                At JR Solvy, we create technology that works everywhere — delivering AI-powered innovation, cybersecurity expertise, and reliable support that drives real impact.
               </p>
             </div>
             
