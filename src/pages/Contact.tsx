@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Send, CheckCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import SEOHead from '@/components/SEOHead';
 
@@ -42,13 +42,6 @@ const Contact = () => {
       value: '+234 708 305 7837',
       description: 'Call us during business hours',
       color: 'bg-innovation'
-    },
-    {
-      icon: MapPin,
-      title: 'Visit Us',
-      value: 'Ibeno L.G.A., Akwa Ibom State',
-      description: 'Our location in Nigeria',
-      color: 'bg-accent'
     }
   ];
 
@@ -109,7 +102,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16 max-w-2xl mx-auto">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
