@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,20 +48,31 @@ const Navbar = () => {
           </div>
 
           {/* Professional Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 focus-ring ${
-                  isActive(item.href)
-                    ? 'text-white bg-primary'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 focus-ring ${
+                    isActive(item.href)
+                      ? 'text-white bg-primary'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+            
+            {/* Phone Number */}
+            <a 
+              href="tel:+2347083057837"
+              className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-all duration-300"
+            >
+              <Phone size={16} />
+              <span className="text-sm font-semibold">+234 708 305 7837</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}

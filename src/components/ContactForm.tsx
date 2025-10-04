@@ -5,14 +5,14 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
-import { Send, User, Mail, MessageSquare, Briefcase, Phone } from 'lucide-react';
+import { Send, User, Mail, MessageSquare, Building2 } from 'lucide-react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    projectType: '',
+    company: '',
+    serviceInterest: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,7 +28,7 @@ const ContactForm = () => {
   const handleSelectChange = (value: string) => {
     setFormData({
       ...formData,
-      projectType: value
+      serviceInterest: value
     });
   };
 
@@ -41,8 +41,8 @@ const ContactForm = () => {
         body: {
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
-          projectType: formData.projectType,
+          company: formData.company,
+          serviceInterest: formData.serviceInterest,
           message: formData.message,
         },
       });
@@ -53,10 +53,10 @@ const ContactForm = () => {
       
       toast({
         title: "Message sent successfully!",
-        description: "Thank you for your message. We'll get back to you soon.",
+        description: "We'll reply within 2 hours.",
       });
       
-      setFormData({ name: '', email: '', phone: '', projectType: '', message: '' });
+      setFormData({ name: '', email: '', company: '', serviceInterest: '', message: '' });
     } catch (error) {
       console.error('Error sending contact email:', error);
       toast({
@@ -107,38 +107,36 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-            <Phone className="inline mr-2" size={16} />
-            Phone Number (Optional)
+          <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+            <Building2 className="inline mr-2" size={16} />
+            Company (Optional)
           </label>
           <Input
-            id="phone"
-            name="phone"
-            type="tel"
-            value={formData.phone}
+            id="company"
+            name="company"
+            type="text"
+            value={formData.company}
             onChange={handleChange}
-            placeholder="+234 708 305 7837"
+            placeholder="Your company name"
             className="w-full"
           />
         </div>
 
         <div>
-          <label htmlFor="projectType" className="block text-sm font-medium text-foreground mb-2">
-            <Briefcase className="inline mr-2" size={16} />
-            Project Type
+          <label htmlFor="serviceInterest" className="block text-sm font-medium text-foreground mb-2">
+            <MessageSquare className="inline mr-2" size={16} />
+            Service Interested In
           </label>
-          <Select value={formData.projectType} onValueChange={handleSelectChange}>
+          <Select value={formData.serviceInterest} onValueChange={handleSelectChange}>
             <SelectTrigger className="w-full">
-              <SelectValue placeholder="Select the type of project you need help with" />
+              <SelectValue placeholder="Select a service" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="ai-solutions">🤖 AI & Software Solutions</SelectItem>
-              <SelectItem value="cybersecurity">🔒 Cybersecurity & Ethical Hacking</SelectItem>
-              <SelectItem value="software-development">💻 Software Development</SelectItem>
-              <SelectItem value="tech-consulting">📚 Tech Consulting & Training</SelectItem>
-              <SelectItem value="technical-support">🔧 Technical Support Services</SelectItem>
-              <SelectItem value="digital-solutions">🌐 E-Commerce & Digital Solutions</SelectItem>
-              <SelectItem value="other">❓ Other / Not Sure</SelectItem>
+              <SelectItem value="ai-automation">AI Solutions & Automation</SelectItem>
+              <SelectItem value="cybersecurity">Cybersecurity & Protection</SelectItem>
+              <SelectItem value="software-development">Custom Software Development</SelectItem>
+              <SelectItem value="tech-training">Tech Training & Consulting</SelectItem>
+              <SelectItem value="other">Other</SelectItem>
             </SelectContent>
           </Select>
         </div>

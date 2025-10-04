@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Send, CheckCircle, MessageCircle } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import SEOHead from '@/components/SEOHead';
 
@@ -102,7 +102,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-16 max-w-4xl mx-auto">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
@@ -123,6 +123,20 @@ const Contact = () => {
               </div>
             ))}
           </div>
+          
+          {/* WhatsApp Button */}
+          <div className="text-center">
+            <a
+              href="https://wa.me/2347083057837"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#20BD5A] transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
+            >
+              <MessageCircle size={24} />
+              <span>Chat with us on WhatsApp</span>
+            </a>
+            <p className="text-sm text-muted-foreground mt-3">Fastest way to reach us • We reply within 2 hours</p>
+          </div>
         </div>
       </section>
 
@@ -133,9 +147,10 @@ const Contact = () => {
             {/* Form */}
             <div>
               <div className="bg-card rounded-2xl shadow-lg p-6 lg:p-8 border border-border/50">
-                <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4 lg:mb-6">
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2 lg:mb-3">
                   Send us a Message
                 </h2>
+                <p className="text-primary font-semibold mb-4">⚡ We reply within 2 hours</p>
                 <p className="text-muted-foreground mb-6 lg:mb-8">
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
