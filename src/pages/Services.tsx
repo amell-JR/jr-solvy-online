@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Brain, Settings, Palette, GraduationCap, Zap, Star, ArrowRight,
-  Code, Shield, Users, Monitor, Bot, Smartphone, CheckCircle
+  Brain, GraduationCap, ArrowRight,
+  Code, Shield, Users, CheckCircle
 } from 'lucide-react';
 import SEOHead from '@/components/SEOHead';
 
@@ -10,45 +10,65 @@ const Services = () => {
   const services = [
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "AI Solutions for Every Field",
-      description: "AI-powered automation, data analysis, virtual assistants, and intelligent applications across industries including education, healthcare, retail, security, and more.",
-      technologies: ["OpenAI GPT", "TensorFlow", "Python", "Machine Learning"],
-      caseStudy: "Deployed AI automation system for RetailCorp across 5 departments, reducing manual tasks by 80% and improving decision-making speed by 60% through predictive analytics.",
-      results: ["80% reduction in manual tasks", "60% faster decision-making", "5 departments automated"],
+      title: "AI Solutions & Automation",
+      description: "Custom AI tools that automate repetitive tasks, analyze data, and make smarter decisions for your business.",
+      whoItsFor: "Small to medium businesses (10-100 employees) looking to reduce manual work",
+      benefits: [
+        "Save 15-20 hours per week on repetitive tasks",
+        "Make faster, data-driven decisions",
+        "Reduce human errors in daily operations",
+        "24/7 automated customer support"
+      ],
+      pricing: "From ₦150,000/month",
       color: "bg-gradient-to-br from-primary to-primary/80"
     },
     {
-      icon: <Settings className="w-8 h-8" />,
-      title: "Cybersecurity & Ethical Hacking",
-      description: "Advanced protection, penetration testing, security training, and customized defense strategies to protect organizations and individuals.",
-      technologies: ["Penetration Testing", "Security Audits", "Threat Analysis", "Ethical Hacking"],
-      caseStudy: "Conducted comprehensive security assessment for FinanceCorp, identifying 25+ vulnerabilities and implementing defense strategies that prevented 3 major breach attempts.",
-      results: ["25+ vulnerabilities identified", "3 breach attempts prevented", "100% security compliance achieved"],
+      icon: <Shield className="w-8 h-8" />,
+      title: "Cybersecurity & Protection",
+      description: "Complete security audits, penetration testing, and ongoing protection to keep your business data safe from threats.",
+      whoItsFor: "Nigerian businesses handling customer data, payments, or sensitive information",
+      benefits: [
+        "Identify security gaps before hackers do",
+        "Protect customer trust and your reputation",
+        "Meet compliance requirements (NDPR, PCI DSS)",
+        "24/7 threat monitoring and response"
+      ],
+      pricing: "From ₦200,000/month",
       color: "bg-gradient-to-br from-innovation to-innovation/80"
     },
     {
-      icon: <Palette className="w-8 h-8" />,
-      title: "Software Development",
-      description: "Custom mobile apps, web platforms, automation tools, and scalable solutions tailored to client needs across various industries.",
-      technologies: ["React", "Node.js", "Mobile Development", "Cloud Platforms"],
-      caseStudy: "Built custom inventory management system for LogisticsCorp, streamlining operations across 10 warehouses and reducing processing time by 75%.",
-      results: ["10 warehouses connected", "75% faster processing", "Real-time inventory tracking"],
+      icon: <Code className="w-8 h-8" />,
+      title: "Custom Software Development",
+      description: "Tailored web and mobile apps built specifically for your business processes—no bloated features you don't need.",
+      whoItsFor: "Growing businesses that need custom tools (inventory, CRM, booking systems, etc.)",
+      benefits: [
+        "Software that fits your exact workflow",
+        "Faster operations with automation built-in",
+        "Mobile access for your team anywhere",
+        "Scalable as your business grows"
+      ],
+      pricing: "From ₦500,000 (one-time project)",
       color: "bg-gradient-to-br from-accent to-accent/80"
     },
     {
       icon: <GraduationCap className="w-8 h-8" />,
-      title: "Tech Consulting & Training",
-      description: "Digital transformation guidance, AI adoption strategies, upskilling programs, and practical training to prepare teams for the future.",
-      technologies: ["Digital Strategy", "AI Implementation", "Training Programs", "Change Management"],
-      caseStudy: "Led digital transformation for ManufacturingCorp, training 200+ employees on AI tools and increasing operational efficiency by 45% within 6 months.",
-      results: ["200+ employees trained", "45% efficiency increase", "Complete digital transformation"],
+      title: "Tech Training & Consulting",
+      description: "Hands-on training for your team to adopt AI tools, cybersecurity best practices, and modern digital workflows.",
+      whoItsFor: "Companies upgrading their tech stack or adopting new tools",
+      benefits: [
+        "Train staff on AI and automation tools",
+        "Improve team productivity by 30-40%",
+        "Reduce dependency on external consultants",
+        "Ongoing support after training"
+      ],
+      pricing: "From ₦100,000/session",
       color: "bg-gradient-to-br from-purple-600 to-purple-500"
     }
   ];
 
   const whyChooseUs = [
     { text: 'AI services designed for any industry', icon: Shield },
-    { text: 'Trusted cybersecurity and technical support', icon: Monitor },
+    { text: 'Trusted cybersecurity and technical support', icon: Code },
     { text: 'Scalable solutions for startups to enterprises', icon: CheckCircle },
     { text: 'Technology that drives real impact', icon: Users }
   ];
@@ -116,45 +136,56 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-white border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+              <div key={index} className="bg-card border border-border rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
                 <div className="space-y-6">
                   {/* Header */}
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
                       {service.icon}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
+                      <h3 className="text-xl font-bold text-foreground mb-2">{service.title}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                     </div>
                   </div>
                   
-                  {/* Technologies */}
-                  <div className="bg-secondary rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-foreground mb-2">Technologies Used:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {service.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-md font-medium">
-                          {tech}
-                        </span>
+                  {/* Who It's For */}
+                  <div className="bg-secondary/50 rounded-lg p-4 border border-border/30">
+                    <h4 className="text-sm font-semibold text-foreground mb-2 flex items-center space-x-2">
+                      <Users className="w-4 h-4 text-primary" />
+                      <span>Who It's For:</span>
+                    </h4>
+                    <p className="text-muted-foreground text-sm">{service.whoItsFor}</p>
+                  </div>
+
+                  {/* Key Benefits */}
+                  <div>
+                    <h4 className="text-sm font-semibold text-foreground mb-3">Key Benefits:</h4>
+                    <div className="space-y-2">
+                      {service.benefits.map((benefit, benefitIndex) => (
+                        <div key={benefitIndex} className="flex items-start space-x-3">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">{benefit}</span>
+                        </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* Case Study */}
-                  <div className="bg-primary/5 rounded-lg p-4 border border-primary/10">
-                    <h4 className="text-sm font-semibold text-foreground mb-2">Success Story:</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">{service.caseStudy}</p>
-                    <div className="space-y-1">
-                      {service.results.map((result, resultIndex) => (
-                        <div key={resultIndex} className="flex items-center space-x-2">
-                          <CheckCircle className="w-3 h-3 text-primary" />
-                          <span className="text-xs font-medium text-foreground">{result}</span>
-                        </div>
-                      ))}
+                  {/* Pricing & CTA */}
+                  <div className="pt-4 border-t border-border/30 flex items-center justify-between">
+                    <div>
+                      <p className="text-xs text-muted-foreground mb-1">Starting from</p>
+                      <p className="text-xl font-bold text-primary">{service.pricing}</p>
                     </div>
+                    <Link
+                      to="/contact"
+                      className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 flex items-center space-x-2 text-sm"
+                    >
+                      <span>Schedule Free Consultation</span>
+                      <ArrowRight size={16} />
+                    </Link>
                   </div>
                 </div>
               </div>
