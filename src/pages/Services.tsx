@@ -19,7 +19,6 @@ const Services = () => {
         "Reduce human errors in daily operations",
         "24/7 automated customer support"
       ],
-      pricing: "From ₦150,000/month",
       color: "bg-gradient-to-br from-primary to-primary/80"
     },
     {
@@ -33,7 +32,6 @@ const Services = () => {
         "Meet compliance requirements (NDPR, PCI DSS)",
         "24/7 threat monitoring and response"
       ],
-      pricing: "From ₦200,000/month",
       color: "bg-gradient-to-br from-innovation to-innovation/80"
     },
     {
@@ -47,7 +45,6 @@ const Services = () => {
         "Mobile access for your team anywhere",
         "Scalable as your business grows"
       ],
-      pricing: "From ₦500,000 (one-time project)",
       color: "bg-gradient-to-br from-accent to-accent/80"
     },
     {
@@ -61,7 +58,6 @@ const Services = () => {
         "Reduce dependency on external consultants",
         "Ongoing support after training"
       ],
-      pricing: "From ₦100,000/session",
       color: "bg-gradient-to-br from-purple-600 to-purple-500"
     }
   ];
@@ -173,15 +169,11 @@ const Services = () => {
                     </div>
                   </div>
 
-                  {/* Pricing & CTA */}
-                  <div className="pt-4 border-t border-border/30 flex items-center justify-between">
-                    <div>
-                      <p className="text-xs text-muted-foreground mb-1">Starting from</p>
-                      <p className="text-xl font-bold text-primary">{service.pricing}</p>
-                    </div>
+                  {/* CTA */}
+                  <div className="pt-4 border-t border-border/30">
                     <Link
                       to="/contact"
-                      className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 flex items-center space-x-2 text-sm"
+                      className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 flex items-center justify-center space-x-2 text-sm"
                     >
                       <span>Schedule Free Consultation</span>
                       <ArrowRight size={16} />
