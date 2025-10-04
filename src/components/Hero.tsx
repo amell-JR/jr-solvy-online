@@ -13,16 +13,12 @@ const Hero = () => {
             
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                <span className="text-foreground block">AI Services, Cybersecurity</span>
-                <span className="text-primary block mt-1">& Technical Support</span>
+                <span className="text-foreground block">AI & Cybersecurity Solutions</span>
+                <span className="text-primary block mt-1">for Growing Nigerian Businesses</span>
               </h1>
               
               <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0">
-                JR Solvy delivers intelligent and scalable technology solutions — from 
-                <span className="text-primary font-semibold"> AI innovations</span> to 
-                <span className="text-primary font-semibold"> cybersecurity</span>, 
-                <span className="text-primary font-semibold"> software development</span>, and 
-                reliable technical support — helping businesses and individuals succeed in the digital age.
+                Protect your data, automate operations, scale faster
               </p>
             </div>
 
@@ -59,7 +55,7 @@ const Hero = () => {
                 to="/contact"
                 className="group bg-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-0.5"
               >
-                <span>Get Started</span>
+                <span>Get Free Security Audit</span>
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               
