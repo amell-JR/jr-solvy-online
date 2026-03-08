@@ -38,7 +38,7 @@ Deno.serve(async (req: Request): Promise<Response> => {
     }
 
     const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY');
-    const SENDER_EMAIL = Deno.env.get('SENDER_EMAIL') || 'onboarding@resend.dev';
+    const SENDER_EMAIL = 'onboarding@resend.dev';
     const RECIPIENT_EMAIL = Deno.env.get('RECIPIENT_EMAIL');
 
     if (!RESEND_API_KEY || !RECIPIENT_EMAIL) {
